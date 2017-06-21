@@ -1,0 +1,110 @@
+{
+    "project_logo": "http://img.chefkoch-cdn.de/img/ck.de/ck-logo-de.png",
+    "project_favicon": "favicon.png",
+    "project_name": null,
+    "project_url": null,
+    "copyright_start_year": "2017",
+    "client_name": null,
+    "client_url": "http://www.chefkoch.de",
+    "creators": [
+        {
+            "name": "Team Geist",
+            "url": "http://www.chefkoch.de"
+        }
+    ],
+    "theme": {
+        "border_color": "#E0E6ED",
+        "highlight_color": "#F9FAFC",
+        "brand_color": "#00585C",
+        "background_color": "#FFFFFF",
+        "code_highlight_theme": "github",
+        "override_code_highlight_bg": "#F9FAFC",
+        "sample_dark_background": "#333333",
+        "show_project_name": true,
+        "show_version": true,
+        "max_width": null,
+        "titles": {
+            "library_title": "Chefkoch Design System",
+            "pages_title": "Übersicht",
+            "components_title": "Komponenten"
+        }
+    },
+    "assets": {
+        "css": [
+            "./build/chefkoch-design-system.css"
+        ],
+        "js": []
+    },
+    "font_libraries": {
+        "typekit_code": null,
+        "typography_web_fonts": null,
+        "google_web_fonts": null
+    },
+    "content": {
+        "show_first_page_on_load": true,
+        "title": "Overview",
+        "pages": [
+            {
+                "name": "introduction",
+                "title": "Introduction",
+                "file": "./pages/intro.md"
+            },
+            {
+                "name": "foobar",
+                "title": "Foobar",
+                "file": "./pages/foobar.md"
+            }
+        ]
+    },
+    "groups": [
+        {
+            "name": "buttons",
+            "title": "Buttons",
+            "components": [
+                {
+                    "group": "buttons",
+                    "name": "standard",
+                    "title": "Standard-Button",
+                    "width": "half"
+                },
+                {
+                    "group": "buttons",
+                    "name": "icon_button",
+                    "title": "Standard-Button mit Icon",
+                    "width": "half"
+                },
+                {
+                    "group": "buttons",
+                    "name": "light",
+                    "title": "Light Button"
+                }
+            ]
+        },
+        {
+            "name": "colors",
+            "title": "Farben",
+            "components": [
+                {
+                    "group": "colors",
+                    "name": "colors",
+                    "title": "Farben",
+                    "type": "colors",
+                    "colors": [
+                        "#618F30",
+                        "#537A29",
+                        "#403B3B",
+                        "#BBB9B9",
+                        "#9D9D9D",
+                        "#D8D8D8",
+                        "#BF538D",
+                        "#007C8C",
+                        "#F2C829",
+                        "#FF665E",
+                        "#F6F5F2"
+                    ]
+                }
+            ]
+        }
+    ],
+    "version": "1.9.3"
+}

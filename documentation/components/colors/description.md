@@ -1,0 +1,1 @@
+Hier könnte ich mir statt der unten dargestellten Standard-Ansicht auch ein selbst gebautes Element vorstellen, was neben den Farbwerten auch die Namen und etwas zu den Verwendungszwecken darstellt.
