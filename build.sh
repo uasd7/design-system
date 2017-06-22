@@ -9,4 +9,3 @@ cp -rf ./documentation/* ./chefkoch-design-system/
 
 echo "Generating assets"
 ./node_modules/.bin/gulp build
-

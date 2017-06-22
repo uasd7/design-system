@@ -3,3 +3,5 @@
 node_modules/
 chefkoch-design-system/
 astrum-config.json
+/artifacts/
+!/artifacts/.gitkeep
