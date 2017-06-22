@@ -1,0 +1,34 @@
+@import "tools.icon";
+
+// Icons
+
+.sg-icon {
+    @include icon;
+
+    // Icons inside buttons
+    // - use text color
+    // - always use square artboards
+    &--button {
+        @include icon--button;
+    }
+
+    // Icons inside text buttons have 5px whitespace between text and themselves
+    &--text-button {
+        @include icon--text-button;
+    }
+
+    // "Info" icons are colored blue
+    &--info {
+        @include icon--info;
+    }
+
+    // "Warning" icons are colored yellow
+    &--warning {
+        @include icon--warning;
+    }
+
+    // "Danger" icons are colored red
+    &--danger {
+        @include icon--danger;
+    }
+}

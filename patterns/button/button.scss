@@ -1,0 +1,64 @@
+@import 'tools.button';
+
+// Buttons
+// https://wiki.chefkoch.de/display/LS/Buttons
+.sg-button {
+    @include button;
+
+    // DEFAULT button: white text on green background
+    &--standard {
+        @include button--standard;
+    }
+
+    // LIGHT button: green text on white with green border
+    &--light {
+        @include button--light;
+    }
+
+    // INFO button: white text on blue background
+    &--info {
+        @include button--info;
+    }
+
+    // WARNING button: white text on yellow background
+    &--warning {
+        @include button--warning;
+    }
+
+    // DANGER (error, fatal warning) button: white text on red background
+    &--danger {
+        @include button--danger;
+    }
+
+    // BIGBOSS (super important action) button: big version of any variation, can only be used once per page
+    &--bigboss {
+        @include button--bigboss;
+    }
+
+    // TEXT-BLACK button: link button with black colored text on transparent background. Without border.
+    &--text-black {
+        @include button--text-black;
+    }
+}
+
+// Link resets until style leaks are fixed
+a.sg-button {
+    text-decoration: none !important;
+
+    &--standard,
+    &--info,
+    &--danger {
+        color: white !important;
+    }
+
+    &--light {
+        color: $color-text--corporate-green !important;
+
+        &:active,
+        &:focus,
+        &:hover {
+            color: white !important;
+            background-color: $color-text--corporate-green !important;
+        }
+    }
+}
