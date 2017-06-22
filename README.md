@@ -33,6 +33,9 @@ The pattern-documentation which is used by astrum is in _components/app/document
 ## Running Tests
 
 ## Debugging
+You can develop locally by switching to _components/build_ and run _local-install.sh_ to install.
+
+Run _local-dev.sh_ in the same folder to start a small webserver and a gulp-watcher.
 
 \[Don't forget to describe how to debug tests.\]
 
