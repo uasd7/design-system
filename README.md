@@ -1,29 +1,11 @@
-# *Next Steps for Project Creators*
+# Chefkoch Design System
 
-*Make sure that your project adheres to the items on this checklist:*
+This repository contains the Chefkoch Design System. It patterns and documentation with 
+[Astrum](http://astrum.nodividestudio.com/).
 
-https://wiki.chefkoch.de/pages/viewpage.action?pageId=41550142
+The actual patterns are in _components/patterns_.
 
-*When releasing your service into the live cluster you will need a node port to
-access it. Find the next free node port here:*
-
-https://wiki.chefkoch.de/display/DOK/NodePorts
-
-*When you have picked a node port, __you have to__ enter it into the wiki list
-above.*
-
-*When going live, please enter your Microservice here for a short description and
-useful links:*
-
-https://wiki.chefkoch.de/display/DOK/Microservices
-
-*Feel free to delete this section in the final version of your README.md.*
-
-*Please use the following sections as a template for the final documentation.*
-
-# \[Insert project name\]
-
-\[Please describe your project in a sentence.\]
+The pattern-documentation which is used by astrum is in _components/app/documentation_
 
 ## Contents
 * [Installation](#installation)
@@ -59,15 +41,3 @@ https://wiki.chefkoch.de/display/DOK/Microservices
 ## CI and Deployment
 
 \[Please provide links to the CI and Deploy projects.\]
-
-# ============
-
-# Chefkoch Design System
-
-## Initial Readme
-Use _build.sh_ to build project
-
-### Folders
-_documentation_ contains files that are displayed with Astrum
-
-_source_ contains pattern-code
