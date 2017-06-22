@@ -8,8 +8,10 @@ echo "Initializing design system"
 cd chefkoch-design-system
 rm -rf components
 rm -rf pages
+rm -rf assets
 rm data.json
 ln -sf ../../app/documentation/* .
+ln -sf ../../app/assets .
 cd ..
 
 echo "Generating assets"

@@ -1,1 +1,1 @@
-Ein grüner Button
+Der Standard-Button ist grün mit weißer Schrift.

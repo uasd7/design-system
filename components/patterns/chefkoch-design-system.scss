@@ -1,3 +1,21 @@
 @import "settings/typography/typography";
 @import "icon/icon";
 @import "button/button";
+
+
+/*
+ * Addional Styling for Astrum
+ */
+
+.ndpl-sidebar__logo {
+  max-width: 100%;
+}
+
+.cds-color-wrapper {
+  display: flex;
+  margin-bottom: 3%;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

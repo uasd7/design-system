@@ -1,0 +1,1 @@
+Abseits des Standard-Buttons kann es verschiedene Variationen dieses Patterns, natürlich auch immer mit und ohne Icon, geben.

@@ -1,1 +1,0 @@
-Ein grüner Button mit Icon
