@@ -18,4 +18,15 @@
   &:last-child {
     margin-bottom: 0;
   }
+
+  h3 {
+    margin-top: 0;
+  }
+}
+
+@media only screen and (max-width: 60em) {
+  .ndpl-component__color-container {
+    margin-right: 3%;
+    width: 17.5%;
+  }
 }

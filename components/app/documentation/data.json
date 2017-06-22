@@ -80,7 +80,18 @@
                 {
                     "group": "colors",
                     "name": "colors",
-                    "title": "Corporate Farben"
+                    "title": "Corporate Farben",
+                    "options": {
+                        "disable_code_sample": true
+                    }
+                },
+                {
+                    "group": "colors",
+                    "name": "matrix",
+                    "title": "Barrierefreie Kombinationsmatrix",
+                    "options": {
+                        "disable_code_sample": true
+                    }
                 }
             ]
         }
