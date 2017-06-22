@@ -16,8 +16,8 @@ var development = false;
 
 // Load config
 var config  = {
-    "CdsSourceFile" : "./source/scss/chefkoch-design-system.scss",
-    "watchFolder" : "./source/scss/",
+    "CdsSourceFile" : "./patterns/chefkoch-design-system.scss",
+    "watchFiles" : "./patterns/**/*",
     "destFolder" : "./chefkoch-design-system/build/",
     "autoprefixerOptions" : {
         "browsers" : ["last 3 versions", "> 1% in DE", "Android 4"]
@@ -64,5 +64,5 @@ function sassErrorHandler(err) {
  */
 gulp.task('watch', function () {
     development = true;
-    gulp.watch(config.watchFolder, ['frontend-scss:build']);
+    gulp.watch(config.watchFiles, ['build']);
 });
