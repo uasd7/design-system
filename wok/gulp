@@ -1,0 +1,7 @@
+#!/bin/bash
+
+set -e
+
+run_build="$(readlink -e $(dirname $0))/run -w /app/components/app dr.chefkoch.net/chefkoch-design-system/build"
+
+$run_build /bin/sh -c -- "node_modules/gulp/bin/gulp.js ${@}"
