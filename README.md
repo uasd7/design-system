@@ -21,6 +21,17 @@ The pattern-documentation which is used by astrum is in _components/app/document
 \[Ideally you will implement [our standard commands](https://wiki.chefkoch.de/display/DEV/Allgemeingueltige+Projekt-Kommandos).\]
 
 ## Installation
+Checkout the repository and run
+
+    wok/build
+
+to get the latest images. Then run
+
+    wok/start
+    
+to start the application. It can be found at
+
+    http://ds.local.dev.chefkoch.de:30081/
 
 ## Building
 
@@ -33,9 +44,6 @@ The pattern-documentation which is used by astrum is in _components/app/document
 ## Running Tests
 
 ## Debugging
-You can develop locally by switching to _components/build_ and run _local-install.sh_ to install.
-
-Run _local-dev.sh_ in the same folder to start a small webserver and a gulp-watcher.
 
 \[Don't forget to describe how to debug tests.\]
 
