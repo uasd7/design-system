@@ -5,3 +5,5 @@ node_modules/
 /components/app/astrum-config.json
 /artifacts/
 !/artifacts/.gitkeep
+/config/kubernetes/environment/production/*.yml
+!/config/kubernetes/environment/production/*.tmpl.yml
