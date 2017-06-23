@@ -4,7 +4,7 @@ items:
   - apiVersion: v1
     kind: Service
     metadata:
-      name: chefkoch-design-system-app
+      name: design-system-app
     spec:
       type: NodePort
       ports:
