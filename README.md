@@ -25,21 +25,23 @@ Checkout the repository and run
 
     wok/build
 
-to get the latest images. Then run
+to get the latest images.
+
+## Building
+Available tools:
+* wok/astrum
+* wok/gulp
+* wok/npm
+* wok/yarn
+
+## Interactive Environment
+Run
 
     wok/start
-    
+
 to start the application. It can be found at
 
     http://ds.local.dev.chefkoch.de:30081/
-
-## Building
-
-## Interactive Environment
-
-\[Describe how to start and stop an interactive environment for the project.\]
-
-\[Please include a direct link to the running environment, if appropriate.\]
 
 ## Running Tests
 
@@ -51,4 +53,6 @@ to start the application. It can be found at
 
 ## CI and Deployment
 
-\[Please provide links to the CI and Deploy projects.\]
+* [https://jira.chefkoch.de/bamboo/browse/GEIST-DS](CI)
+* [https://jira.chefkoch.de/bamboo/browse/GEIST-DS/deployments](Deployment)
+* [design.chefkoch.de](https://design.chefkoch.de/)
