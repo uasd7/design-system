@@ -1,7 +1,7 @@
-.idea/
+/.idea
 .DS_Store
 node_modules/
-chefkoch-design-system/
-astrum-config.json
+/components/app/web
+/components/app/astrum-config.json
 /artifacts/
 !/artifacts/.gitkeep

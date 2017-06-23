@@ -6,7 +6,7 @@ pushd "$(dirname $0)" > /dev/null
 
 docker pull debian:9
 
-for image in base build; do
-#   docker pull dr.chefkoch.net/chefkoch-design-system/$image
-   docker build -t dr.chefkoch.net/chefkoch-design-system/$image ../components/$image
-done
+docker build -t dr.chefkoch.net/chefkoch-design-system/base ../components/base
+docker build -t dr.chefkoch.net/chefkoch-design-system/build ../components/app -f ../components/app/Dockerfile.build
+./build
+docker build -t dr.chefkoch.net/chefkoch-design-system/app ../components/app
