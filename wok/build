@@ -9,7 +9,6 @@ $run_build rm -rf web node_modules astrum-config.json
 $run_build yarn install
 $run_build astrum init web
 
-$run_build cp -r documentation/{components,pages,data.json} web/
-$run_build cp -r assets/ web/assets
+$run_build cp -r documentation/{components,pages,data.json} robots.txt assets web/
 
 $run_build node_modules/.bin/gulp build
