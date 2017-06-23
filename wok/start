@@ -1,0 +1,3 @@
+#!/bin/bash
+
+docker run --rm -it -p 30081:80 dr.chefkoch.net/chefkoch-design-system/app

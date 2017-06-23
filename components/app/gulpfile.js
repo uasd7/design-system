@@ -18,7 +18,7 @@ var development = false;
 var config  = {
     "CdsSourceFile" : "../patterns/chefkoch-design-system.scss",
     "watchFiles" : "../patterns/**/*",
-    "destFolder" : "./chefkoch-design-system/build/",
+    "destFolder" : "./web/build/",
     "autoprefixerOptions" : {
         "browsers" : ["last 3 versions", "> 1% in DE", "Android 4"]
     }
