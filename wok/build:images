@@ -1,0 +1,12 @@
+#!/bin/bash
+
+set -e
+
+pushd "$(dirname $0)" > /dev/null
+
+docker pull debian:9
+
+for image in base build; do
+#   docker pull dr.chefkoch.net/chefkoch-design-system/$image
+   docker build -t dr.chefkoch.net/chefkoch-design-system/$image ../components/$image
+done

@@ -1,0 +1,15 @@
+#!/bin/bash
+
+set -e
+
+run_build="$(readlink -e $(dirname $0))/run -w /app/components/build dr.chefkoch.net/chefkoch-design-system/build"
+
+$run_build rm -rf chefkoch-design-system node_modules astrum-config.json
+
+$run_build yarn install
+$run_build astrum init ./chefkoch-design-system/
+
+$run_build cp -r ../app/documentation/{components,pages,data.json} ./chefkoch-design-system/
+$run_build cp -r ../app/assets/ ./chefkoch-design-system/assets
+
+$run_build node_modules/.bin/gulp build
