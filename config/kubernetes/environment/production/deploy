@@ -1,0 +1,17 @@
+#!/bin/bash
+
+set -e
+
+pushd "$(dirname $0)" > /dev/null
+
+C_kubectl="kubectl --insecure-skip-tls-verify=true -s https://core01.fra.chefkoch.net:6443 --username=${bamboo_kubernetes_username} --password=${bamboo_kubernetes_password} --namespace=${bamboo_kubernetes_namespace}"
+
+for replication_controller in *-rc.yml ; do
+    rc_name=${replication_controller/-rc.yml/}
+    rc_instance=$($C_kubectl get rc -otemplate --template '{{ range $index, $item := .items }}{{if eq $index 0}}{{$item.metadata.name}}{{end}}{{end}}' -l name="${rc_name}" || true)
+    if [ -n "$rc_instance" ] ; then
+        $C_kubectl rolling-update --update-period="30s" ${rc_instance} -f ${replication_controller}
+    else
+        $C_kubectl create -f ${replication_controller}
+    fi
+done

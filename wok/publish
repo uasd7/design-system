@@ -1,0 +1,28 @@
+#!/bin/bash
+
+set -e
+
+pushd "$(dirname $0)" > /dev/null
+
+if [ -n "${bamboo_buildNumber}" ]; then
+    export BRANCH="${bamboo_planRepository_branch/\//-}"
+    export TAG="$(echo ${BRANCH}-${bamboo_buildNumber} | tr '[:upper:]' '[:lower:]')"
+else
+    export BRANCH="$(git rev-parse --abbrev-ref HEAD)"
+    export TAG="$(git log -1 --pretty=format:'%H' | tr '[:upper:]' '[:lower:]')"
+fi
+
+for env in production; do
+    for template in ../config/kubernetes/environment/${env}/*.tmpl.yml; do
+        filename=${template/.tmpl/}
+        eval "echo \"$(cat ${template})\"" > ${filename}
+    done
+done
+
+for image in base build app; do
+    docker tag dr.chefkoch.net/chefkoch-design-system/$image:latest dr.chefkoch.net/chefkoch-design-system/$image:${TAG}
+    docker push dr.chefkoch.net/chefkoch-design-system/$image:${TAG}
+    if [ $BRANCH == "master" ];then
+        docker push dr.chefkoch.net/chefkoch-design-system/$image:latest
+    fi
+done

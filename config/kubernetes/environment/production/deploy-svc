@@ -1,0 +1,16 @@
+#!/bin/bash
+
+set -e
+
+pushd "$(dirname $0)" > /dev/null
+
+C_kubectl="kubectl --insecure-skip-tls-verify=true -s https://core01.fra.chefkoch.net:6443 --username=${bamboo_kubernetes_username} --password=${bamboo_kubernetes_password} --namespace=${bamboo_kubernetes_namespace}"
+
+for service in *-svc.yml; do
+    svc_name=${service/-svc.yml/}
+    svc_instance=$($C_kubectl get svc "${svc_name}" -otemplate --template '{{.metadata.name}}' || true)
+    if [ -n "$svc_instance" ] ; then
+        $C_kubectl delete service ${svc_name}
+    fi
+    $C_kubectl create -f ${service}
+done

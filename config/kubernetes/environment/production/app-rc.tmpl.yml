@@ -1,0 +1,27 @@
+kind: ReplicationController
+apiVersion: v1
+metadata:
+  name: app-${TAG}
+  labels:
+    name: app
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        name: app
+        release: ${TAG}
+    spec:
+      nodeSelector:
+        purpose: platform-services
+        role: master
+      containers:
+        - name: nginx
+          image: dr.chefkoch.net/chefkoch-design-system/app:${TAG}
+          imagePullPolicy: IfNotPresent
+          command: [ "nginx" ]
+          ports:
+            - {containerPort: 80}
+          readinessProbe:
+            tcpSocket:
+              port: 80

@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: List
+items:
+  - kind: Namespace
+    apiVersion: v1
+    metadata: {
+      name: design-system,
+      labels: {
+        name: design-system,
+        project: design-system
+      }
+    }
