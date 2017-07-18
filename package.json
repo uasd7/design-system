@@ -1,0 +1,17 @@
+{
+  "name": "chefkoch-design-system",
+  "version": "1.0.0",
+  "description": "Chefkoch Design System",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@jira.chefkoch.de:7999/geist/chefkoch-design-system.git"
+  },
+  "author": "Team Geist",
+  "license": "ISC"
+}
