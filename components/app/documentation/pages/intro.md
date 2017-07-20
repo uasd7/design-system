@@ -1,3 +1,0 @@
-# Einleitung
-
-Das _Chefkoch-Design-System_ ist ...

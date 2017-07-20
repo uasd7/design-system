@@ -46,13 +46,8 @@
         "pages": [
             {
                 "name": "introduction",
-                "title": "Einleitung",
-                "file": "./pages/intro.md"
-            },
-            {
-                "name": "placeholder",
-                "title": "Platzhalter",
-                "file": "./pages/placeholder.md"
+                "title": "Benutzung",
+                "file": "./pages/usage.md"
             }
         ]
     },

@@ -4,4 +4,4 @@ set -e
 
 run_build="$(readlink -e $(dirname $0))/run -w /app/components/app dr.chefkoch.net/chefkoch-design-system/build"
 
-$run_build npm ${@}
+$run_build astrum ${@}
