@@ -24,7 +24,7 @@ includePath für das Design-System gesetzt sein:
 ## 3. Einbindung und Nutzung der Patterns
 Ein Pattern aus dem Design-System muss erst per scss eingebunden werden:
 
-    @include 'button/button'
+    @import 'button/button'
 
 und kann dann im Markup als Klasse verwendet werden:
 

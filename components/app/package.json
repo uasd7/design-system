@@ -6,7 +6,7 @@
   "author": "Team Geist",
   "license": "MIT",
   "dependencies": {
-    "es6-promise": "^4.1.0",
+    "es6-promise": "^4.1.1",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.0.0",
     "gulp-if": "^2.0.2",
