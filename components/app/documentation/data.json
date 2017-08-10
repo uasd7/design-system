@@ -15,8 +15,8 @@
     "theme": {
         "border_color": "#E0E6ED",
         "highlight_color": "#F9FAFC",
-        "brand_color": "#00585C",
-        "background_color": "#FFFFFF",
+        "brand_color": "#618F30",
+        "background_color": "#F6F5F2",
         "code_highlight_theme": "github",
         "override_code_highlight_bg": "#F9FAFC",
         "sample_dark_background": "#333333",
@@ -48,23 +48,23 @@
                 "name": "introduction",
                 "title": "Benutzung",
                 "file": "./pages/usage.md"
+            },
+            {
+                "name": "accessibility-matrix",
+                "title": "Barrierefreie Farben",
+                "file": "./pages/accessibility-matrix.md"
             }
         ]
     },
     "groups": [
         {
-            "name": "buttons",
-            "title": "Buttons",
+            "name": "typography",
+            "title": "Typographie",
             "components": [
                 {
-                    "group": "buttons",
-                    "name": "standard",
-                    "title": "Standard-Button"
-                },
-                {
-                    "group": "buttons",
-                    "name": "variations",
-                    "title": "Variationen"
+                    "group": "typography",
+                    "name": "headings",
+                    "title": "Headings"
                 }
             ]
         },
@@ -79,14 +79,22 @@
                     "options": {
                         "disable_code_sample": true
                     }
+                }
+            ]
+        },
+        {
+            "name": "buttons",
+            "title": "Buttons",
+            "components": [
+                {
+                    "group": "buttons",
+                    "name": "standard",
+                    "title": "Standard-Button"
                 },
                 {
-                    "group": "colors",
-                    "name": "matrix",
-                    "title": "Barrierefreie Kombinationsmatrix",
-                    "options": {
-                        "disable_code_sample": true
-                    }
+                    "group": "buttons",
+                    "name": "variations",
+                    "title": "Variationen"
                 }
             ]
         }

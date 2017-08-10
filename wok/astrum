@@ -2,6 +2,6 @@
 
 set -e
 
-run_build="$(readlink -e $(dirname $0))/run -w /app/components/app dr.chefkoch.net/chefkoch-design-system/build"
+run_build="$(readlink -e $(dirname $0))/run -it -w /app/components/app dr.chefkoch.net/chefkoch-design-system/build"
 
 $run_build astrum ${@}

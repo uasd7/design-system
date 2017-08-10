@@ -16,20 +16,28 @@ var development = false;
 
 // Load config
 var config  = {
+    "docsSource": "./documentation/**/*",
+    "docsDestFolder": "./web",
     "CdsSourceFile" : "../patterns/chefkoch-design-system.scss",
-    "watchFiles" : "../patterns/**/*",
+    "watchFiles" : ["../patterns/**/*", "./documentation/**/*"],
     "destFolder" : "./web/build/",
     "autoprefixerOptions" : {
         "browsers" : ["last 3 versions", "> 1% in DE", "Android 4"]
     }
 };
 
+
+gulp.task('copy-documents', function() {
+    gulp.src(config.docsSource)
+        .pipe(gulp.dest(config.docsDestFolder));
+});
+
 /**
  * Task: Build
  * Description: Compiles SCSS to CSS.
  * Sourcemaps are written if 'development == true'
  */
-gulp.task('build', function () {
+gulp.task('compile-scss', function () {
     return gulp.src(config.CdsSourceFile)
         .pipe(gulpif(development, sourcemaps.init()))
         .pipe(sass({
@@ -64,5 +72,5 @@ function sassErrorHandler(err) {
  */
 gulp.task('watch', function () {
     development = true;
-    gulp.watch(config.watchFiles, ['build']);
+    gulp.watch(config.watchFiles, ['copy-documents', 'compile-scss']);
 });
