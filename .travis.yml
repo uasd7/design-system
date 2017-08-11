@@ -1,5 +1,45 @@
-language: node_js
 sudo: false
+
+### Git cloning and build trigger config ###
+
+git:
+  depth: 3
+
+branches:
+  only:
+  - master
+  - /^v\d+\.\d+(\.\d+)?(-\S*)?$/
+  - /^deploy-.*$/
+
+### Environment ###
+
+language: node_js
+node_js:
+  - "node"
+  - "7"
+
+### Installing dependencies ###
 
 install:
   - npm install
+
+
+### Build ###
+
+before_script:
+  - npm install -g gulp-cli
+  - npm install -g astrum
+
+script: astrum init components/app/web && gulp build
+
+### Deployment ###
+
+
+deploy:
+  #### Deploy the Static Design System to Github Pages / design.chefkoch.de ####
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN # Set in travis-ci.org dashboard
+  local_dir: components/web
+  on:
+    branch: master
