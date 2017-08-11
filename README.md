@@ -1,4 +1,5 @@
 # Chefkoch Design System
+[![Build Status](https://travis-ci.org/chefkoch-dev/design-system.svg?branch=master)](https://travis-ci.org/chefkoch-dev/design-system)
 
 This repository contains the Chefkoch Design System. It patterns and documentation with 
 [Astrum](http://astrum.nodividestudio.com/).
