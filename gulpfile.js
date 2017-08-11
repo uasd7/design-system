@@ -36,7 +36,7 @@ gulp.task('copy-documents', function() {
         .pipe(gulp.dest(config.webRootDir));
 
     gulp.src(config.appRootDir + '/assets/**/*')
-        .pipe(gulp.dest(config.webRootDir + '/assets'));
+        .pipe(gulp.dest(config.webRootDir));
 
     gulp.src(config.appRootDir + '/robots.txt')
         .pipe(gulp.dest(config.webRootDir));

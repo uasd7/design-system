@@ -1,6 +1,6 @@
 {
-    "project_logo": "assets/logo.svg",
-    "project_favicon": "assets/favicon.ico",
+    "project_logo": "logo.svg",
+    "project_favicon": "favicon.ico",
     "project_name": "Chefkoch Design System",
     "project_url": null,
     "copyright_start_year": "2017",
