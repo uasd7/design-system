@@ -4,13 +4,9 @@
 Um das Design-System im eigenen Projekt nutzen zu können, muss
 das Paket als Abhängigkeit in der package.json definiert werden:
 
-    "chefkoch-design-system": "git+ssh://git@jira.chefkoch.de:7999/geist/chefkoch-design-system.git"
+    "chefkoch/design-system": "*"
 
-und per 
-
-    npm install
-
-installiert werden.
+und per `npm install` installiert werden.
     
 ## 2. Konfiguration des Build-Systems
 Damit das Design-System vom gulp Taskrunner eingebunden und kompiliert
