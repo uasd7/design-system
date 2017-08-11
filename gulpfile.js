@@ -16,20 +16,32 @@ var development = false;
 
 // Load config
 var config  = {
-    "docsSource": "./components/app/documentation/**/*",
-    "docsDestFolder": "./components/app/web",
-    "CdsSourceFile" : "./components/patterns/chefkoch-design-system.scss",
-    "watchFiles" : ["./components/patterns/**/*", "./components/app/documentation/**/*"],
-    "destFolder" : "./components/app/web/build/",
-    "autoprefixerOptions" : {
-        "browsers" : ["last 3 versions", "> 1% in DE", "Android 4"]
+    'appRootDir':  './components/app',
+    'docsSource': './components/app/documentation/**/*',
+    'webRootDir': './components/app/web',
+    'CdsSourceFile' : './components/patterns/chefkoch-design-system.scss',
+    'watchFiles' : ['./components/patterns/**/*', './components/app/documentation/**/*'],
+    'destFolder' : './components/app/web/build/',
+    'autoprefixerOptions' : {
+        'browsers' : ['last 3 versions', '> 1% in DE', 'Android 4']
     }
 };
 
-
+/**
+ * Task: Copy Documents
+ * Description: Copy the example & description data of the patterns to the astrum webroot directory
+ */
 gulp.task('copy-documents', function() {
     gulp.src(config.docsSource)
-        .pipe(gulp.dest(config.docsDestFolder));
+        .pipe(gulp.dest(config.webRootDir));
+
+    gulp.src(config.appRootDir + '/assets/**/*')
+        .pipe(gulp.dest(config.webRootDir + '/assets'));
+
+    gulp.src(config.appRootDir + '/robots.txt')
+        .pipe(gulp.dest(config.webRootDir));
+
+
 });
 
 /**
