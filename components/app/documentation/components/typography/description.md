@@ -1,0 +1,1 @@
+Hier werden alle Formatierungen für Texte dargestellt. Sowohl Überschriften, als auch Fließtexte, sowie sich wiederholende Text-Bausteine sind hiermit gemeint.

@@ -1,0 +1,1 @@
+Hier sind die diversen Headline-Formate inkl. Variationen ausgeführt.
