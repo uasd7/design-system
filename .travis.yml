@@ -18,16 +18,16 @@ branches:
 language: node_js
 node_js:
   - "node"
-  - "7"
 
+cache:
+  directories:
+  - $HOME/.npm
 
 
 ### Installing dependencies ###
 
 install:
   - npm install
-
-
 
 
 ### Build ###
