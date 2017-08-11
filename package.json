@@ -2,10 +2,16 @@
   "name": "chefkoch-design-system",
   "version": "1.0.0",
   "description": "Chefkoch Design System",
-  "repository": {
-    "type": "git",
-    "url": "ssh://git@jira.chefkoch.de:7999/geist/chefkoch-design-system.git"
-  },
-  "author": "Team Geist",
-  "license": "ISC"
+  "repository": "https://github.com/chefkoch-dev/design-system.git",
+  "author": "Team Geist/Team Funkytown Avengers",
+  "license": "MIT",
+  "dependencies": {
+    "astrum": "^1.9.5",
+    "es6-promise": "^4.1.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-if": "^2.0.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.0"
+  }
 }

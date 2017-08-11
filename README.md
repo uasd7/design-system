@@ -10,11 +10,10 @@ The pattern-documentation which is used by astrum is in _components/app/document
 ## Contents
 * [Installation](#installation)
 * [Building](#building)
-* [Interactive Environment](#interactive-environment)
+* [Interactive Development Environment](#interactive-development-environment)
 * [Running Tests](#running-tests)
 * [Debugging](#debugging)
 * [Logging](#logging)
-* [CI and Development](#ci-and-development)
 
 \[Please describe how to achieve the following tasks in your project.\]
 
@@ -34,7 +33,7 @@ Available tools:
 * wok/npm
 * wok/yarn
 
-## Interactive Environment
+## Interactive Development Environment
 Run
 
     wok/start
@@ -44,15 +43,8 @@ to start the application. It can be found at
     http://ds.local.dev.chefkoch.de:30081/
 
 ## Running Tests
+Work in progress.
 
 ## Debugging
 
-\[Don't forget to describe how to debug tests.\]
-
-## Logging
-
-## CI and Deployment
-
-* [https://jira.chefkoch.de/bamboo/browse/GEIST-DS](CI)
-* [https://jira.chefkoch.de/bamboo/browse/GEIST-DS/deployments](Deployment)
-* [design.chefkoch.de](https://design.chefkoch.de/)
+Work in progress.
