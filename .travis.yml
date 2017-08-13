@@ -22,6 +22,7 @@ node_js:
 cache:
   directories:
   - $HOME/.npm
+  - "node_modules"
 
 
 ### Installing dependencies ###
@@ -34,9 +35,8 @@ install:
 
 before_script:
   - npm install -g gulp-cli
-  - npm install -g astrum
 
-script: astrum init components/app/web && gulp build
+script: gulp
 
 
 

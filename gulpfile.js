@@ -7,9 +7,10 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
-require('es6-promise').polyfill();
 var autoprefixer = require('gulp-autoprefixer');
 var gulpif = require('gulp-if');
+var execSync = require('child_process').execSync;
+var browserSync = require('browser-sync').create();
 
 // Use 'development' variable with 'gulpif' to toggle writing of sourcemaps
 var development = false;
@@ -31,6 +32,14 @@ var config  = {
  * Task: Copy Documents
  * Description: Copy the example & description data of the patterns to the astrum webroot directory
  */
+gulp.task('init-astrum', function() {
+    execSync('npm run astrum init ./components/app/web', { stdio: [0,1,2]});
+});
+
+/**
+ * Task: Copy Documents
+ * Description: Copy the example & description data of the patterns to the astrum webroot directory
+ */
 gulp.task('copy-documents', function() {
     gulp.src(config.docsSource)
         .pipe(gulp.dest(config.webRootDir));
@@ -40,8 +49,6 @@ gulp.task('copy-documents', function() {
 
     gulp.src(config.appRootDir + '/robots.txt')
         .pipe(gulp.dest(config.webRootDir));
-
-
 });
 
 /**
@@ -79,11 +86,11 @@ function sassErrorHandler(err) {
     }
 }
 
-
-var browserSync = require('browser-sync').create();
-
 // Static server
 gulp.task('serve', function() {
+
+    development = true;
+
     browserSync.init({
         server: {
             baseDir: "./components/app/web"
@@ -95,15 +102,9 @@ gulp.task('serve', function() {
 });
 
 /**
- * Task: Watch
- * Description: Watcher, sets 'development' so that sourcemaps are written
- */
-gulp.task('watch', function () {
-    development = true;
-    gulp.watch(config.watchFiles, ['copy-documents', 'compile-scss']);
-});
-
-/**
  * Task: Build
+ * Description: initializes astrum, copies all pattern description documents and finally compiles the assets
  */
-gulp.task('build', ['copy-documents', 'compile-scss']);
+gulp.task('build', ['init-astrum', 'copy-documents', 'compile-scss']);
+
+gulp.task('default', ['build']);
