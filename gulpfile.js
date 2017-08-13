@@ -57,7 +57,8 @@ gulp.task('compile-scss', function () {
         }).on('error', sassErrorHandler))
         .pipe(autoprefixer(config.autoprefixerOptions))
         .pipe(gulpif(development, sourcemaps.write('./')))
-        .pipe(gulp.dest(config.destFolder));
+        .pipe(gulp.dest(config.destFolder))
+        .pipe(browserSync.stream());
 });
 
 /**
@@ -77,6 +78,21 @@ function sassErrorHandler(err) {
         process.exit(1);
     }
 }
+
+
+var browserSync = require('browser-sync').create();
+
+// Static server
+gulp.task('serve', function() {
+    browserSync.init({
+        server: {
+            baseDir: "./components/app/web"
+        }
+    });
+
+    gulp.watch("components/patterns/**/*.scss", ['compile-scss']);
+    gulp.watch("components/app/documentation/**/*").on('change', browserSync.reload);
+});
 
 /**
  * Task: Watch
