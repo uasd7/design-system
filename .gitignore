@@ -2,6 +2,7 @@
 .DS_Store
 node_modules/
 /components/app/web
+astrum-config.json
 /components/app/astrum-config.json
 /artifacts/
 !/artifacts/.gitkeep
