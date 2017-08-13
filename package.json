@@ -7,8 +7,6 @@
   "license": "MIT",
   "dependencies": {
     "astrum": "^1.9.5",
-    "es6-promise": "^4.1.1",
-    "fsevents": "^1.1.2",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.0.0",
     "gulp-if": "^2.0.2",
