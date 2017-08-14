@@ -50,3 +50,11 @@ deploy:
   local_dir: components/app/web
   on:
     branch: master
+
+
+### Notifications ###
+
+notifications:
+  hipchat:
+    rooms:
+      - $HIPCHAT_TOKEN@HIPCHAT_ROOM
