@@ -59,3 +59,5 @@ notifications:
     rooms:
       - $HIPCHAT_TOKEN@HIPCHAT_ROOM_ID
     notify: true
+    template:
+      - '%{repository}#%{build_number} (%{branch} - %{commit} : %{author}): %{message}'
