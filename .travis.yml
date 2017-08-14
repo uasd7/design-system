@@ -57,4 +57,5 @@ deploy:
 notifications:
   hipchat:
     rooms:
-      - $HIPCHAT_TOKEN@HIPCHAT_ROOM
+      - $HIPCHAT_TOKEN@HIPCHAT_ROOM_ID
+    notify: true
