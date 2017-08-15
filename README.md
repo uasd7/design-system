@@ -1,51 +1,49 @@
 # Chefkoch Design System
 [![Build Status](https://travis-ci.org/chefkoch-dev/design-system.svg?branch=master)](https://travis-ci.org/chefkoch-dev/design-system)
 
-This repository contains the Chefkoch Design System. It patterns and documentation with 
+This repository contains the Chefkoch Design System. 
+Its patterns and documentation are build with 
 [Astrum](http://astrum.nodividestudio.com/).
-
-The actual patterns are in _components/patterns_.
-
-The pattern-documentation which is used by astrum is in _components/app/documentation_
 
 ## Contents
 * [Installation](#installation)
-* [Building](#building)
-* [Interactive Development Environment](#interactive-development-environment)
+* [Development](#development)
 * [Running Tests](#running-tests)
-* [Debugging](#debugging)
-* [Logging](#logging)
-
-\[Please describe how to achieve the following tasks in your project.\]
-
-\[Ideally you will implement [our standard commands](https://wiki.chefkoch.de/display/DEV/Allgemeingueltige+Projekt-Kommandos).\]
 
 ## Installation
-Checkout the repository and run
+Install the gulp-cli globally (if you haven't already)
 
-    wok/build
+    npm install -g gulp-cli
 
-to get the latest images.
+Checkout the repository and and install npm dependencies
 
-## Building
-Available tools:
-* wok/astrum
-* wok/gulp
-* wok/npm
-* wok/yarn
+    npm install
 
-## Interactive Development Environment
-Run
+Finally build the design system with gulp
 
-    wok/start
+    gulp build
 
-to start the application. It can be found at
 
-    http://ds.local.dev.chefkoch.de:30081/
+## Development
+
+### Directory structure
+| Directory | Description |
+| --- | --- |
+| `app` | Contains the "Design System" astrum app |
+| `app/components` | Contains the pattern descriptions and example markup |
+| `app/pages` | As the name suggests, info and content pages |
+| `patterns` | Contains the actual pattern source code, momentarily only Sass |
+
+### Requirements
+* NodeJS
+
+Serve the design system locally via Browsersync:
+
+    gulp serve
+
+and then start the application on:
+
+    http:/localhost:3000
 
 ## Running Tests
-Work in progress.
-
-## Debugging
-
 Work in progress.
