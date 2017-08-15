@@ -1,3 +1,0 @@
-#!/bin/bash
-
-docker run -it --rm -v "$(readlink -e $(dirname $0)/../components/app/web)":/app/web -p 30081:80 dr.chefkoch.net/chefkoch-design-system/app
