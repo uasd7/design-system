@@ -97,6 +97,18 @@
                     "title": "Variationen"
                 }
             ]
+        },
+        {
+            "name": "alerts",
+            "title": "Feedback",
+            "components": [
+                {
+                    "group": "alerts",
+                    "name": "note",
+                    "title": "Hinweis",
+                    "width": "half"
+                }
+            ]
         }
     ],
     "version": "1.9.3"

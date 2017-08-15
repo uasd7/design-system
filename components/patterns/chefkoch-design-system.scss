@@ -1,6 +1,8 @@
 @import "settings/typography/typography";
 @import "icon/icon";
 @import "button/button";
+@import "note/note";
+@import "utilities/display-utilities";
 
 
 /*
@@ -22,6 +24,12 @@
   h3 {
     margin-top: 0;
   }
+}
+
+.note-container-example {
+
+  background: #999;
+  padding: 20px 0;
 }
 
 @media only screen and (max-width: 60em) {
