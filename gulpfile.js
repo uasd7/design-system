@@ -69,8 +69,8 @@ gulp.task('serve', function() {
         }
     });
 
-    gulp.watch("components/patterns/**/*.scss", ['compile-scss']);
-    gulp.watch("components/app/{components,pages}/**/*").on('change', browserSync.reload);
+    gulp.watch("patterns/**/*.scss", ['compile-scss']);
+    gulp.watch("app/{components,pages}/**/*").on('change', browserSync.reload);
 });
 
 /**
