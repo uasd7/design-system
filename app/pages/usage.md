@@ -14,7 +14,7 @@ werden kann, muss ein Sass-Compiler-Task konfiguriert und ein
 includePath für das Design-System gesetzt sein:
 
     sass({
-        includePaths: ['node_modules/chefkoch-design-system/components/patterns/']
+        includePaths: ['node_modules/chefkoch-design-system/patterns/']
     }) 
 
 ## 3. Einbindung und Nutzung der Patterns
@@ -24,5 +24,5 @@ Ein Pattern aus dem Design-System muss erst per scss eingebunden werden:
 
 und kann dann im Markup als Klasse verwendet werden:
 
-    <button class="sg-button sg-button--standard">Button-Element als Button</button>
+    <button class="ds-button ds-button--standard">Button-Element als Button</button>
 

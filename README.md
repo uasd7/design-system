@@ -2,48 +2,49 @@
 [![Build Status](https://travis-ci.org/chefkoch-dev/design-system.svg?branch=master)](https://travis-ci.org/chefkoch-dev/design-system)
 
 This repository contains the Chefkoch Design System. 
-Its patterns and documentation are build with 
+Its patterns and documentation are built with
 [Astrum](http://astrum.nodividestudio.com/).
+
+Showcase: [http://design.chefkoch.de](http://design.chefkoch.de)
 
 ## Contents
 * [Installation](#installation)
-* [Development](#development)
-* [Running Tests](#running-tests)
+* [Contributing](#contributing)
+* [Disclaimer](#disclaimer)
 
-## Installation
-Install the gulp-cli globally (if you haven't already)
+## Installation & Usage
 
-    npm install -g gulp-cli
+### Usage Requirements
+* Sass
 
-Checkout the repository and and install npm dependencies
+Install the design patterns and add them in anyway you see fit to
+your build pipeline.
 
-    npm install
+    npm install chefkoch-design-patterns --save-dev
 
-Finally build the design system with gulp
+**Integration in the pipeline, example with gulp and gulp-sass**
+    sass({
+        includePaths: ['node_modules/chefkoch-design-system/patterns/']
+    })
 
-    gulp build
+**Import the desired pattern in your sass file**
+Ein Pattern aus dem Design-System muss erst per scss eingebunden werden:
+
+    @import 'button/button'
+
+**Use the imported component in your markup**
+
+    <button class="ds-button ds-button--standard">Button-Element als Button</button>
 
 
-## Development
+## Contributing
+Take a look at the [development and contributing guidelines](CONTRIBUTING.md) if you are in the
+mood of extending the design system.
 
-### Directory structure
-| Directory | Description |
-| --- | --- |
-| `app` | Contains the "Design System" astrum app |
-| `app/components` | Contains the pattern descriptions and example markup |
-| `app/pages` | As the name suggests, info and content pages |
-| `patterns` | Contains the actual pattern source code, momentarily only Sass |
+Please make sure to read the disclaimer first.
 
-### Requirements
-* NodeJS
+## Disclaimer
+The Chefkoch Design System is a library for internal usage by the Chefkoch GmbH, its publication on Github and npm
+ is mainly in the spirit of providing another implementation reference for display patterns and design systems.
 
-Serve the design system locally via Browsersync:
-
-    gulp serve
-
-and then start the application on:
-
-    http:/localhost:3000
-
-## Running Tests
-Work in progress.
+We **do not encourage** its usage for other websites.
