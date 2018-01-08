@@ -16,6 +16,7 @@
   "devDependencies": {
     "browser-sync": "^2.18.13"
   },
+  "files": ['patterns'],
   "scripts": {
     "astrum": "astrum"
   }
