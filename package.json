@@ -1,6 +1,6 @@
 {
   "name": "chefkoch-design-system",
-  "version": "1.0.0",
+  "version": "0.9.0",
   "description": "Chefkoch Design System",
   "repository": "https://github.com/chefkoch-dev/design-system.git",
   "author": "Team Geist/Team Funkytown Avengers",
@@ -16,7 +16,7 @@
   "devDependencies": {
     "browser-sync": "^2.18.13"
   },
-  "files": ['patterns'],
+  "files": ["patterns"],
   "scripts": {
     "astrum": "astrum"
   }
