@@ -58,6 +58,18 @@ function sassErrorHandler(err) {
     }
 }
 
+gulp.task('lint-css', function lintCssTask() {
+    const gulpStylelint = require('gulp-stylelint');
+
+    return gulp
+        .src('patterns/**/*.scss')
+        .pipe(gulpStylelint({
+            reporters: [
+                {formatter: 'string', console: true}
+            ]
+        }));
+});
+
 // Static server
 gulp.task('serve', function() {
 
@@ -69,7 +81,7 @@ gulp.task('serve', function() {
         }
     });
 
-    gulp.watch("patterns/**/*.scss", ['compile-scss']);
+    gulp.watch("patterns/**/*.scss", ['compile-scss', 'lint-css']);
     gulp.watch("app/{components,pages}/**/*").on('change', browserSync.reload);
 });
 
@@ -77,6 +89,7 @@ gulp.task('serve', function() {
  * Task: Build
  * Description: initializes astrum, copies all pattern description documents and finally compiles the assets
  */
-gulp.task('build', ['compile-scss']);
+gulp.task('test', ['lint-css']);
+gulp.task('build', ['compile-scss', 'test']);
 
 gulp.task('default', ['build']);
