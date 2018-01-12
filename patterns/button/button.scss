@@ -2,7 +2,7 @@
 
 // Buttons
 // https://wiki.chefkoch.de/display/LS/Buttons
-.sg-button {
+.ds-button {
     @include button;
 
     // DEFAULT button: #fff text on green background
@@ -42,7 +42,7 @@
 }
 
 // Link resets until style leaks are fixed
-a.sg-button {
+a.ds-button {
     text-decoration: none !important;
 
     &--standard,

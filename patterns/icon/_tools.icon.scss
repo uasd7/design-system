@@ -17,7 +17,7 @@
     margin-right: 3px; // visual goal of 5px margin needs only 3px via CSS due to general whitespace created by inline-block
 
     // Apply special class on parent for rare cases where icon is displayed to the right of the text
-    .sg-button--icon-right & {
+    .ds-button--icon-right & {
         margin-left: 3px;
         margin-right: 0;
     }
