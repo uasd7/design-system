@@ -9,11 +9,11 @@
     // Star Elements
 
     &__stars {
-        display:inline-block;
+        display: inline-block;
         height: $star-size;
         width: 84px;
-        overflow:hidden;
-        text-align:left;
+        overflow: hidden;
+        text-align: left;
         background-position: 0 0;
         background-image: url("https://img.chefkoch-cdn.de/img/search/star-grey.svg");
         background-repeat: repeat-x;
@@ -21,30 +21,61 @@
 
         // Pseudo element for the filled rating stars
 
-        &:after{
-            content:'';
-            height:100%;
-            display:inline-block;
-            background-image:url("https://img.chefkoch-cdn.de/img/search/star-yellow.svg");
+        &::after {
+            content: "";
+            height: 100%;
+            display: inline-block;
+            background-image: url("https://img.chefkoch-cdn.de/img/search/star-yellow.svg");
             background-repeat: repeat-x;
             background-size: $star-size;
-            background-position:0 0
+            background-position: 0 0;
         }
 
         // Rating scores variants
 
-        &--0_0:after{ width: 0% }
-        &--0_5:after{ width: 10% }
-        &--1_0:after{ width: 20% }
-        &--1_5:after{ width: 30%; }
-        &--2_0:after{ width: 40%; }
-        &--2_5:after{ width: 50%; }
-        &--3_0:after{ width: 60%; }
-        &--3_5:after{ width: 70%; }
-        &--4_0:after{ width: 80%; }
-        &--4_5:after{ width: 90%; }
-        &--5_0:after{ width: 100%; }
+        &--0_0::after {
+            width: 0%;
+        }
 
+        &--0_5::after {
+            width: 10%;
+        }
+
+        &--1_0::after {
+            width: 20%;
+        }
+
+        &--1_5::after {
+            width: 30%;
+        }
+
+        &--2_0::after {
+            width: 40%;
+        }
+
+        &--2_5::after {
+            width: 50%;
+        }
+
+        &--3_0::after {
+            width: 60%;
+        }
+
+        &--3_5::after {
+            width: 70%;
+        }
+
+        &--4_0::after {
+            width: 80%;
+        }
+
+        &--4_5::after {
+            width: 90%;
+        }
+
+        &--5_0::after {
+            width: 100%;
+        }
 
         // Size Modifiers
 
@@ -53,7 +84,7 @@
             width: 149px;
             background-size: 30px;
 
-            &:after {
+            &::after {
                 background-size: 30px;
             }
         }
@@ -63,7 +94,7 @@
             width: 73px;
             background-size: $star-size-small;
 
-            &:after {
+            &::after {
                 background-size: $star-size-small;
             }
         }
@@ -84,6 +115,6 @@
     }
 }
 
- .rating-raters-num{
-    margin-left:0.5em;
+.rating-raters-num {
+    margin-left: 0.5em;
 }

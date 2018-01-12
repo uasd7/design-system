@@ -2,45 +2,45 @@
 //    #Fonts
 //\*------------------------------------*/
 
-$fontfamily-sansserif: 'HelveticeNeue', 'Helvetica', 'Arial', sans-serif;
-$fontfamily-serif: 'Georgia', 'Times', 'Times New Roman', serif;
+$fontfamily-sansserif: "HelveticeNeue", "Helvetica", "Arial", sans-serif;
+$fontfamily-serif: "Georgia", "Times", "Times New Roman", serif;
 
-$fontsize-heading-1:          33px !default;
-$fontsize-heading-2:          22px !default;
-$fontsize-heading-3:          18px !default;
-$fontsize-heading-4:          14px !default;
-$fontsize-text-copy:          13px !default;
-$fontsize-text-copy--small:   12px !default;
-$fontsize-text-marginalia:    10px !default;
+$fontsize-heading-1: 33px !default;
+$fontsize-heading-2: 22px !default;
+$fontsize-heading-3: 18px !default;
+$fontsize-heading-4: 14px !default;
+$fontsize-text-copy: 13px !default;
+$fontsize-text-copy--small: 12px !default;
+$fontsize-text-marginalia: 10px !default;
 
-$fontsize-button:             15px !default;
-$fontsize-button--bigboss:    18px !default;
-$fontsize-icon:               15px !default;
+$fontsize-button: 15px !default;
+$fontsize-button--bigboss: 18px !default;
+$fontsize-icon: 15px !default;
 
-$lineheight-heading-1:        ($fontsize-heading-1 + 6px)/$fontsize-heading-1 !default;
-$lineheight-heading-2:        ($fontsize-heading-2 + 6px)/$fontsize-heading-2 !default;
-$lineheight-heading-3:        ($fontsize-heading-3 + 6px)/$fontsize-heading-3 !default;
-$lineheight-heading-4:        ($fontsize-heading-4 + 6px)/$fontsize-heading-4 !default;
+$lineheight-heading-1: ($fontsize-heading-1 + 6px)/$fontsize-heading-1 !default;
+$lineheight-heading-2: ($fontsize-heading-2 + 6px)/$fontsize-heading-2 !default;
+$lineheight-heading-3: ($fontsize-heading-3 + 6px)/$fontsize-heading-3 !default;
+$lineheight-heading-4: ($fontsize-heading-4 + 6px)/$fontsize-heading-4 !default;
 
-$lineheight-text-copy:        1.5 !default;
+$lineheight-text-copy: 1.5 !default;
 $lineheight-text-copy--small: 1.5 !default;
-$lineheight-text-marginalia:  1.5 !default;
+$lineheight-text-marginalia: 1.5 !default;
 
-$fontweight-thin:             100;
-$fontweight-extra-light:      200;
-$fontweight-light:            300;
-$fontweight-normal:           400;
-$fontweight-medium:           500;
-$fontweight-semi-bold:        600;
-$fontweight-bold:             700;
-$fontweight-extra-bold:       800;
-$fontweight-black:            900;
+$fontweight-thin: 100;
+$fontweight-extra-light: 200;
+$fontweight-light: 300;
+$fontweight-normal: 400;
+$fontweight-medium: 500;
+$fontweight-semi-bold: 600;
+$fontweight-bold: 700;
+$fontweight-extra-bold: 800;
+$fontweight-black: 900;
 
-$fontfamily--base:            $fontfamily-sansserif;
-$fontsize--base:              $fontsize-text-copy;
+$fontfamily--base: $fontfamily-sansserif;
+$fontsize--base: $fontsize-text-copy;
 
-$font-heading-1:              $fontweight-bold #{$fontsize-heading-1}/#{$lineheight-heading-1} $fontfamily-sansserif !default;
-$font-heading-2:              $fontweight-bold #{$fontsize-heading-2}/#{$lineheight-heading-2} $fontfamily-sansserif !default;
-$font-heading-3:              $fontweight-bold #{$fontsize-heading-3}/#{$lineheight-heading-3} $fontfamily-sansserif !default;
-$font-heading-4:              $fontweight-bold #{$fontsize-heading-4}/#{$lineheight-heading-4} $fontfamily-sansserif !default;
-$font-text-copy:              $fontweight-normal #{$fontsize-text-copy}/#{$lineheight-text-copy} $fontfamily-sansserif !default;
+$font-heading-1: $fontweight-bold #{$fontsize-heading-1}/#{$lineheight-heading-1} $fontfamily-sansserif !default;
+$font-heading-2: $fontweight-bold #{$fontsize-heading-2}/#{$lineheight-heading-2} $fontfamily-sansserif !default;
+$font-heading-3: $fontweight-bold #{$fontsize-heading-3}/#{$lineheight-heading-3} $fontfamily-sansserif !default;
+$font-heading-4: $fontweight-bold #{$fontsize-heading-4}/#{$lineheight-heading-4} $fontfamily-sansserif !default;
+$font-text-copy: $fontweight-normal #{$fontsize-text-copy}/#{$lineheight-text-copy} $fontfamily-sansserif !default;

@@ -1,13 +1,15 @@
-@import 'settings/typography/general';
+@import "settings/typography/general";
 
 // Create all specified heading styles in one go.
-@function headings($from: 'all', $to: '') {
+@function headings($from: "all", $to: "") {
     @if $from == $to {
-        @return 'h#{$from}';
-    } @else if $from == 'all' {
-        @return 'h1, h2, h3, h4, h5, h6';
-    } @else {
-        @return 'h#{$from}, ' + headings($from+1, $to);
+        @return "h#{$from}";
+    }
+    @else if $from == "all" {
+        @return "h1, h2, h3, h4, h5, h6";
+    }
+    @else {
+        @return "h#{$from}, " + headings($from+1, $to);
     }
 }
 

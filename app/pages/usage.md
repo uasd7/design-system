@@ -4,7 +4,7 @@
 Um das Design-System im eigenen Projekt nutzen zu können, muss
 das Paket als Abhängigkeit in der package.json definiert werden:
 
-    "chefkoch/design-system": "*"
+    "chefkoch-design-system": "*"
 
 und per `npm install` installiert werden.
     

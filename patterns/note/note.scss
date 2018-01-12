@@ -3,7 +3,6 @@
     Used for giving feedback after user interactions.
  */
 
-
 // Prototype for info/success/danger messages pattern, currently called "note"
 // TODO: https://jira.chefkoch.de/browse/SG-14
 .ds-note {
@@ -17,10 +16,9 @@
         border-left-width: 5px;
     }
 
-
-    /**=============================================
+    /* ==========================================
         Block Modifier
-     *=============================================*/
+     *============================================= */
 
     &--info {
         border-color: $color-info--blue;
@@ -44,10 +42,9 @@
         }
     }
 
-
-    /**=============================================
+    /* ==========================================
         Block Elements
-     *=============================================*/
+     *============================================= */
 
     &__headline {
         font-weight: bold;

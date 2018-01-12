@@ -3,21 +3,20 @@
  * https://wiki.chefkoch.de/display/LS/Colors
  * changing colors is only allowed if UX and design gave their GO!
  **/
+@import "settings/colors/general";
 
-@import 'settings/colors/general';
+$color-corporate-green: $color-crete;
 
-$color-corporate-green:        $color-crete;
+$color-background--sand: $color-pampas;
 
-$color-background--sand:       $color-pampas;
+$color-text--corporate-green: $color-fernfrond;
+$color-text--black: $color-masala;
+$color-text--grey: $color-silverchalice;
 
-$color-text--corporate-green:  $color-fernfrond;
-$color-text--black:            $color-masala;
-$color-text--grey:             $color-silverchalice;
+$color-icon--grey: $color-silver;
 
-$color-icon--grey:             $color-silver;
+$color-action--purple: $color-mulberry;
 
-$color-action--purple:         $color-mulberry;
-
-$color-info--blue:             $color-bluelagoon;
-$color-info--yellow:           $color-saffron;
-$color-info--red:              $color-bittersweet;
+$color-info--blue: $color-bluelagoon;
+$color-info--yellow: $color-saffron;
+$color-info--red: $color-bittersweet;

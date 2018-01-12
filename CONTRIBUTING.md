@@ -1,6 +1,4 @@
-This repository contains the Chefkoch Design System.
-Its patterns and documentation are build with
-[Astrum](http://astrum.nodividestudio.com/).
+# Development and Contributing guidelines
 
 ## Contents
 * [Installation](#installation)
