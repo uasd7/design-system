@@ -1,4 +1,4 @@
-@import "settings/typography/general";
+@import "general";
 
 // Create all specified heading styles in one go.
 @function headings($from: "all", $to: "") {

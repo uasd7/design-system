@@ -120,6 +120,20 @@
                     "width": "half"
                 }
             ]
+        },
+        {
+            "name": "utilites",
+            "title": "Utilities",
+            "components": [
+                {
+                    "group": "utilites",
+                    "name": "spacing",
+                    "title": "Spacing",
+                    "options": {
+                        "disable_code_sample": true
+                    }
+                }
+            ]
         }
     ],
     "version": "1.9.3"
