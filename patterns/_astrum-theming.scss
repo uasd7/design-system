@@ -1,0 +1,36 @@
+/*
+ * Additional Styling for Astrum
+ * Stylelint disalbed for lacking of the "ds-" namespace
+ */
+
+/* stylelint-disable selector-class-pattern  */
+
+.ndpl-sidebar__logo {
+    max-width: 100%;
+}
+
+.cds-color-wrapper {
+    display: flex;
+    margin-bottom: 3%;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    h3 {
+        margin-top: 0;
+    }
+}
+
+.note-container-example {
+
+    background: #999;
+    padding: 20px 0;
+}
+
+@media only screen and (max-width: 60em) {
+    .ndpl-component__color-container {
+        margin-right: 3%;
+        width: 17.5%;
+    }
+}
