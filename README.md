@@ -20,7 +20,7 @@ Showcase: [http://design.chefkoch.de](http://design.chefkoch.de)
 Install the design patterns and add them in anyway you see fit to
 your build pipeline.
 
-    npm install chefkoch-design-patterns --save-dev
+    npm install chefkoch-design-system --save-dev
 
 **Integration in the pipeline, example with gulp and gulp-sass**
     sass({
