@@ -122,6 +122,17 @@
             ]
         },
         {
+            "name": "tabs",
+            "title": "Tabs",
+            "components": [
+                {
+                    "group": "tabs",
+                    "name": "tabs",
+                    "title": "Tabs"
+                }
+            ]
+        },
+        {
             "name": "utilites",
             "title": "Utilities",
             "components": [
