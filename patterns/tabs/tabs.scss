@@ -2,30 +2,22 @@
 $ds-tabs-breakpoint: "screen and (min-width: 601px)";
 
 .ds-tabs {
-    margin-left: -10px;
-    margin-right: -10px;
-    visibility: hidden;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    overflow: inherit;
+    margin-left: 0;
+    margin-right: 0;
     display: flex;
-
-    @media #{$ds-tabs-breakpoint} {
-        justify-content: center;
-        align-items: center;
-        width: auto;
-        overflow: inherit;
-        margin-left: 0;
-        margin-right: 0;
-        visibility: visible;
-    }
 
     &__item {
         display: block;
-
-        @media #{$ds-tabs-breakpoint} {
-            width: 150px;
-            max-width: none;
-        }
+        width: 150px;
+        max-width: none;
 
         &:not(:last-child) {
+            margin-right: 5px;
+
             @media #{$ds-tabs-breakpoint} {
                 margin-right: 18px;
             }
@@ -95,7 +87,9 @@ $ds-tabs-breakpoint: "screen and (min-width: 601px)";
 
     &__title {
         font-size: 12px;
-        //@include font-rem(12px, 14px);
+        font-size: 0.75rem;
+        line-height: 16px;
+        line-height: 1rem;
         display: block;
         margin: 0 auto;
         max-width: 95px;
