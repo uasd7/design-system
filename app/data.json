@@ -128,7 +128,10 @@
                 {
                     "group": "tabs",
                     "name": "tabs",
-                    "title": "Tabs"
+                    "title": "Tabs",
+                    "options": {
+                        "sample_dark_background": true
+                    }
                 }
             ]
         },
