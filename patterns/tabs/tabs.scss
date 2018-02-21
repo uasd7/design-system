@@ -104,23 +104,11 @@ $ds-tabs-breakpoint: "screen and (min-width: 601px)";
         margin: 0 auto 10px;
         justify-content: center;
         align-items: center;
-
-        &--commercial {
-            background-color: #fff;
-            border-radius: 0;
-            height: 60px;
-            width: 100%;
-        }
     }
 
     &__icon {
         position: absolute;
         width: 28px;
         height: auto;
-
-        &--commercial {
-            max-width: 100%;
-            width: auto;
-        }
     }
 }
