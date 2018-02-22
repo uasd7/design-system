@@ -122,6 +122,20 @@
             ]
         },
         {
+            "name": "tabs",
+            "title": "Tabs",
+            "components": [
+                {
+                    "group": "tabs",
+                    "name": "tabs",
+                    "title": "Tabs",
+                    "options": {
+                        "sample_dark_background": true
+                    }
+                }
+            ]
+        },
+        {
             "name": "utilites",
             "title": "Utilities",
             "components": [
