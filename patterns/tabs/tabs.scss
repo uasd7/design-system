@@ -14,6 +14,7 @@ $ds-tabs-breakpoint: "screen and (min-width: 601px)";
         display: block;
         width: 150px;
         max-width: none;
+        min-height: 121px;
 
         &:not(:last-child) {
             margin-right: 5px;
