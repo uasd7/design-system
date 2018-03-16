@@ -105,12 +105,12 @@
                 {
                     "group": "icons",
                     "name": "functional-icons",
-                    "title": "Functional icons"
+                    "title": "Funktionale Icons"
                 },
                 {
                     "group": "icons",
-                    "name": "decorative-icons",
-                    "title": "Decorative icons"
+                    "name": "schmuck-icons",
+                    "title": "Schmuck-Icons"
                 }
             ]
         },

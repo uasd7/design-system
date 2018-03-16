@@ -2,9 +2,19 @@
 
 // Icons
 .ds-icon-elem {
+    &_inline {
+        display: inline-block;
+        margin: 10px;
+    }
+
     &_s {
         width: 16px;
         height: 16px;
+    }
+
+    &_m {
+        width: 24px;
+        height: 24px;
     }
 
     &_l {
