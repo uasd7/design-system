@@ -99,6 +99,22 @@
             ]
         },
         {
+            "name": "icons",
+            "title": "Icons",
+            "components": [
+                {
+                    "group": "icons",
+                    "name": "functional-icons",
+                    "title": "Functional icons"
+                },
+                {
+                    "group": "icons",
+                    "name": "decorative-icons",
+                    "title": "Decorative icons"
+                }
+            ]
+        },
+        {
             "name": "rating",
             "title": "Rating",
             "components": [
