@@ -1,0 +1,28 @@
+@import "tools.pill";
+
+// Pills
+// https://wiki.chefkoch.de/display/LS/Pills
+.ds-pill {
+    @include pill;
+
+    // DEFAULT button: #fff text on green background
+    &--standard {
+        @include pill--standard;
+    }
+}
+
+// Link resets until style leaks are fixed
+a.ds-pill {
+    text-decoration: none !important;
+
+    &--standard {
+        color: $color-text--corporate-green !important;
+
+        &:active,
+        &:focus,
+        &:hover {
+            color: #fff !important;
+            background-color: $color-text--corporate-green !important;
+        }
+    }
+}

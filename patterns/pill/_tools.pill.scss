@@ -1,0 +1,32 @@
+@import "settings.pill";
+
+@mixin pill() {
+    background: transparent;
+    border: 1px solid;
+    border-radius: $pill-border-radius;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 1;
+    padding: 8px 10px;
+    text-decoration: none;
+    transition: background 0.3s ease-in;
+
+    // normalize inner #fffspace in Firefox
+    &::-moz-focus-inner {
+        padding: 0;
+        border: 0;
+    }
+}
+
+@mixin pill--standard() {
+    border-color: $color-corporate-green;
+    color: $color-corporate-green;
+
+    &:active,
+    &:focus,
+    &:hover {
+        color: #fff;
+        background-color: $color-text--corporate-green;
+    }
+}
