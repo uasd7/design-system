@@ -6,6 +6,8 @@
 * [Running Tests](#running-tests)
 
 ## Installation
+Use docker or this part:
+
 Install the gulp-cli globally (if you haven't already)
 
     npm install -g gulp-cli
@@ -35,6 +37,11 @@ Finally build the design system with gulp
 Serve the design system locally via Browsersync:
 
     gulp serve
+
+same with docker:
+
+    docker run --rm --pid=host -v $(pwd):/app -w="/app" -p 3000:3000 node node node_modules/gulp/bin/gulp.js -f /app/gulpfile.js serve
+
 
 and then start the application on:
 
