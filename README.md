@@ -14,6 +14,10 @@ Showcase: [http://design.chefkoch.de](http://design.chefkoch.de)
 
 ## Installation & Usage
 
+### Maintain the design-system with docker
+
+    docker run --rm -v $(pwd):/app -w="/app" node npm install|update
+
 ### Usage Requirements
 * Sass
 

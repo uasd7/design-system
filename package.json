@@ -1,6 +1,6 @@
 {
   "name": "chefkoch-design-system",
-  "version": "0.9.6",
+  "version": "0.9.7",
   "description": "Chefkoch Design System",
   "repository": "https://github.com/chefkoch-dev/design-system.git",
   "author": "Team Geist/Team Funkytown Avengers",
@@ -8,15 +8,15 @@
   "dependencies": {},
   "devDependencies": {
     "astrum": "^1.9.5",
-    "browser-sync": "^2.18.13",
-    "chefkoch-stylelint-config": "^1.0",
+    "browser-sync": "^2.24.4",
+    "chefkoch-stylelint-config": "^1.0.2",
     "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^4.0.0",
+    "gulp-autoprefixer": "^5.0.0",
     "gulp-if": "^2.0.2",
-    "gulp-sass": "^3.1.0",
-    "gulp-sourcemaps": "^2.6.0",
-    "gulp-stylelint": "^6.0.0",
-    "stylelint": "^8.4.0"
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-stylelint": "^7.0.0",
+    "stylelint": "^9.3.0"
   },
   "files": [
     "patterns"
