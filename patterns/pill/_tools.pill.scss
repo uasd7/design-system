@@ -31,18 +31,6 @@
     }
 }
 
-@mixin pill--light() {
-    border-color: $color-corporate-green;
-    color: $color-corporate-green;
-
-    &:active,
-    &:focus,
-    &:hover {
-        color: #fff;
-        background-color: $color-text--corporate-green;
-    }
-}
-
 @mixin pill--active() {
     border-color: $color-corporate-green;
     color: #fff;

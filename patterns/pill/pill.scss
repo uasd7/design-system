@@ -10,10 +10,6 @@
         @include pill--standard;
     }
 
-    &--light {
-        @include pill--light;
-    }
-
     &--active {
         @include pill--active;
     }
