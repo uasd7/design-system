@@ -24,5 +24,8 @@
   "scripts": {
     "astrum": "astrum",
     "stylelint": "stylelint"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
