@@ -21,7 +21,6 @@ before_script:
 - npm install -g gulp-cli
 script: gulp
 deploy:
-  matrix:
   - provider: pages
     skip_cleanup: true
     github_token: "$GITHUB_TOKEN"
