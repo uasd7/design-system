@@ -30,7 +30,7 @@ deploy:
   - provider: npm
     email: ingo.reinhart@chefkoch.de
     api_key:
-      secure: JJnHvjDD+i6OuduyxNNi4pCVtbaWZaF0Ai3rOi2bTZFZY48PZHwfOzYMEsnQfBvmHd1SRk/vq6YCOd/kC7GYEp7KliqQQdVPExGmyL+qUE45woAxYnQKHyRfAVo6gWObwnmX/QxKnJ85SqBoDKHiD15ItWCKF6+kUZPp7E+NQWRB00C7haWKAS01+Xm8jl+7MYSGDG3VYAhuC3yGf7qFmJtNDg1J9u7pCdjKRQrUclm2z81R7nZJqkDJKdHMD5Li0ns4Mj9mTkJ1Z4fw9RiblsMdA5RGVs6LBxi26amb2BxL1V51vY0UTXA7UMuDqPUA76MeEm6jqH3Ji6OmWI32FgnZkIRrRocH6N5PSByA+WOJzzfr9dFJurCgeyFcRLi3oLKmGsQrly02jjKrdoLvRQRrT9VH2VbInPkzRd3H9NdxLQQMsQiKtu4rL66+NqdCg4YqrL6ItWn7Cu1vbDZjdQO+yDhQsbYTj4r9QIBEqmX2ZXm16kznl66lgjyj34iPYkYaAI4X0lLx6NW7NqjZ8PjbLj0x1I/O+X7WV89v1zIHqK4aAcaW8m9TNVdprleBacY2UFKDTUyTjulqo/fUU5s6iz4M8LAfSU4XhiK1MsH74DaVxnFbDFe3AEZWfHr10kCbr13knecQjBu3tZUgL6PjALxGEFrqLUYd2NEGexk=
+      secure: "$NPMJS_TOKEN"
     on:
       tags: true
       repo: chefkoch-dev/design-system
