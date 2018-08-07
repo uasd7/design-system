@@ -1,67 +1,36 @@
 sudo: false
-
-### Notifications ###
-
-notifications:
-  hipchat:
-    rooms:
-      secure: "MOmKtpzmrQYp20uXFPypvAJCcmsUhdwkliK9YGh1Ddj9FVXZXTnNfdSDNNNkzIyHMc1vzd/QmPr8lcoMgrKiCKgWsXoSFfvrddnoBOC1fcxjsPuM1lHnMJvwIgqTR4OK4jrAjiM3jM5eJGEfVlfDZqMTTvGMrX3nonTdlVNuQ2Fagu71nqLnnm12/fvMBub0tWz9dewoh3aAR9iJfZV+K2iGDs3G3sJiEifPqhaPrLmtWbk0+l9HiIU8ZmewBPkeoDaIaVtEttWNF2krtuL1dfABzbPt2bz6TGc9Lb75ZrxHl9Zxs6NsDaFCifZeHK3p552buYpzyjk6I/JM8f2Glz3SqXbGnAgKowFbPfe7xVWsAQfr+UQn9P1wKkrrAeYDAuhd6pzhiCCTJrng+pZg2wQ26f53Ux0YJ8nsvPWrAmMR4Ty2xqqVYW3ckY1Fr4cwb4Ia/5p6fuv1naJjnMEVZc03eFCtjCQNlkvwlPTygMa7S0WjqulRr+pEWQ2O/AzaKX5n68ubbS5HtMn+XZIDWMfmJCzmLFbYurL5LWnOjZ3CaVHOTVpkKrkkwX9VRPxH00Xok4OnqIB7JHSU/M4VacteQDcNPlYqwkOBfylmCFmt++HaKpy24dsg4Y8TNbawbdjAw60aAb5avMQUQTEo6T77PwCvWU4Z0I7d9XUpsZg="
-    notify: true
-    template:
-          - '%{repository}#%{build_number} (%{branch} - %{commit} : %{author}): %{message} (<a href="%{build_url}">Details</a>/<a href="%{compare_url}">Change view</a>)'
-    format: html
-    on_success: always # default: change
-    on_failure: always # default: always
-
-### Git cloning and build trigger config ###
-
 git:
   depth: 3
-
 branches:
   only:
   - master
   - travis
-  - /^v\d+\.\d+(\.\d+)?(-\S*)?$/
-  - /^deploy-.*$/
-  - /^GH-.*$/
-
-
-
-### Environment ###
-
+  - "/^v\\d+\\.\\d+(\\.\\d+)?(-\\S*)?$/"
+  - "/^deploy-.*$/"
+  - "/^GH-.*$/"
 language: node_js
 node_js:
-  - "node"
-
+- node
 cache:
   directories:
-  - $HOME/.npm
-  - "node_modules"
-
-
-### Installing dependencies ###
-
+  - "$HOME/.npm"
+  - node_modules
 install:
-  - npm install
-
-
-### Build ###
-
+- npm install
 before_script:
-  - npm install -g gulp-cli
-
+- npm install -g gulp-cli
 script: gulp
-
-
-
-### Deployment ###
-
 deploy:
-  #### Deploy the Static Design System to Github Pages / design.chefkoch.de ####
-  provider: pages
-  skip_cleanup: true
-  github_token: $GITHUB_TOKEN # Set in travis-ci.org dashboard
-  local_dir: app
-  on:
-    branch: master
+  - provider: pages
+    skip_cleanup: true
+    github_token: "$GITHUB_TOKEN"
+    local_dir: app
+    on:
+      branch: master
+  - provider: npm
+    email: ingo.reinhart@chefkoch.de
+    api_key:
+      secure: "$NPMJS_TOKEN"
+    on:
+      tags: true
+      repo: chefkoch-dev/design-system
