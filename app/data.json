@@ -99,6 +99,17 @@
             ]
         },
         {
+            "name": "pills",
+            "title": "Pills",
+            "components": [
+                {
+                    "group": "pills",
+                    "name": "standard",
+                    "title": "Standard-Pill"
+                }
+            ]
+        },
+        {
             "name": "icons",
             "title": "Icons",
             "components": [

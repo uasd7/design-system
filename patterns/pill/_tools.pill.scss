@@ -1,0 +1,59 @@
+@import "settings.pill";
+
+@mixin pill() {
+    background: transparent;
+    border: 1px solid;
+    border-radius: $pill-border-radius;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 1;
+    padding: 8px 10px;
+    text-decoration: none;
+    transition: background 0.3s ease-in;
+
+    // normalize inner #fffspace in Firefox
+    &::-moz-focus-inner {
+        padding: 0;
+        border: 0;
+    }
+}
+
+@mixin pill--standard() {
+    border-color: $color-corporate-green;
+    color: $color-corporate-green;
+
+    &:active,
+    &:focus,
+    &:hover {
+        color: #fff;
+        background-color: $color-text--corporate-green;
+    }
+}
+
+@mixin pill--active() {
+    border-color: $color-corporate-green;
+    color: #fff;
+    position: relative;
+    background-color: $color-corporate-green;
+    padding-right: 24px;
+
+    &::before {
+        content: " ";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 24px;
+        height: 100%;
+        background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiIHZpZXdCb3g9IjAgMCA4IDgiPiAgPHBhdGggZmlsbD0iI2ZmZiIgZD0iTTQgMGMtMi4yMSAwLTQgMS43OS00IDRzMS43OSA0IDQgNCA0LTEuNzkgNC00LTEuNzktNC00LTR6bS0xLjUgMS43OGwxLjUgMS41IDEuNS0xLjUuNzIuNzItMS41IDEuNSAxLjUgMS41LS43Mi43Mi0xLjUtMS41LTEuNSAxLjUtLjcyLS43MiAxLjUtMS41LTEuNS0xLjUuNzItLjcyeiIgLz48L3N2Zz4=") no-repeat center center/12px;
+        display: block;
+    }
+
+    &:active,
+    &:focus,
+    &:hover {
+        border-color: $color-corporate-green;
+        color: #fff;
+        cursor: pointer;
+    }
+}
