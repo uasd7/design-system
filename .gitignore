@@ -2,3 +2,7 @@
 .DS_Store
 node_modules/
 app/build
+/job.json
+/screenshots.zip
+/screenshots
+/screenshots.json
