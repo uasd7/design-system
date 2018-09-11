@@ -48,3 +48,13 @@ $font-heading-4: $fontweight-bold #{$fontsize-heading-4}/#{$lineheight-heading-4
 $font-heading-5: $fontweight-bold #{$fontsize-heading-5}/#{$lineheight-heading-5} $fontfamily-sansserif !default;
 
 $font-text-copy: $fontweight-normal #{$fontsize-text-copy}/#{$lineheight-text-copy} $fontfamily-sansserif !default;
+
+/* Styleguide enhancement */
+
+/* stylelint-disable */
+#group-typography {
+  div[class*="component__sample"] {
+      background: url("../app/images/baseline-grid-8px.png") repeat 36px 36px;
+  }
+}
+/* stylelint-enable */
