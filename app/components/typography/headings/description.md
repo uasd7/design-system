@@ -1,8 +1,10 @@
-Headlines font-sizes, line-heights und margins orientieren sich an der unit 8.  
-In Ausnahmefällen darf im CSS eine halbe unit (4) verwendet werden. (Hier bei h3 & h5)
-
-Usage:  
+__Code__  
 Semantisch immer die korrekte Auszeichnung verwenden.  
-Für die optische Hierachie gibt es die utility-Klassen __.ds-h[1-5]__
+Sollte die Headline im Design anders aussehen, sollten die dafür vorgesehenen utility-Klassen verwendet werden.  
 
-F: Fontsize, L: Line-Height, M: Margin (bottom)
+__Utilities__  
+Optische Auszeichnungen über die utility-Klassen `.ds-h1`, `.ds-h2`,`.ds-h3`,`.ds-h4` &`.ds-h5` möglich.
+
+__Styles__  
+Helvetica Neue Bold   
+<small>F: Fontsize / L: Line-Height / M: Margin (bottom)</small>
