@@ -49,12 +49,17 @@ $font-heading-5: $fontweight-bold #{$fontsize-heading-5}/#{$lineheight-heading-5
 
 $font-text-copy: $fontweight-normal #{$fontsize-text-copy}/#{$lineheight-text-copy} $fontfamily-sansserif !default;
 
-/* Styleguide enhancement */
+/* Styleguide enhancements */
 
 /* stylelint-disable */
-#group-typography {
+#group-typography-component-headings,
+#group-typography-component-copy-text {
   div[class*="component__sample"] {
-      background: url("../app/images/baseline-grid-8px.png") repeat 36px 36px;
+    background: url("../app/images/baseline-grid-16px.png") repeat 36px 36px;
+
+    h1, h2, h3, h4, h5 {
+      background-color: rgba(#618f30, 0.2);
+    }
   }
 }
 /* stylelint-enable */
