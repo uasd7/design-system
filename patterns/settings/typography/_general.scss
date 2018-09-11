@@ -24,7 +24,7 @@ $lineheight-heading-3: $fontsize-heading-3 + ($unit / 2) !default;
 $lineheight-heading-4: $fontsize-heading-4 + $unit !default;
 $lineheight-heading-5: $fontsize-heading-5 + ($unit / 2) !default;
 
-$lineheight-text-copy: 1.5 !default;
+$lineheight-text-copy: $fontsize-text-copy + $unit !default;
 $lineheight-text-copy--small: 1.5 !default;
 $lineheight-text-marginalia: 1.5 !default;
 
@@ -57,8 +57,8 @@ $font-text-copy: $fontweight-normal #{$fontsize-text-copy}/#{$lineheight-text-co
   div[class*="component__sample"] {
     background: url("../app/images/baseline-grid-16px.png") repeat 36px 36px;
 
-    h1, h2, h3, h4, h5 {
-      background-color: rgba(#618f30, 0.2);
+    h1, h2, h3, h4, h5, p {
+      background-color: rgba($color-corporate-green, 0.15);
     }
   }
 }

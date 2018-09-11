@@ -65,6 +65,11 @@
                     "group": "typography",
                     "name": "headings",
                     "title": "Headings"
+                },
+                {
+                    "group": "typography",
+                    "name": "copy-text",
+                    "title": "Copy Text"
                 }
             ]
         },
