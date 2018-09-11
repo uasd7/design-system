@@ -1,3 +1,4 @@
+@import "../colors";
 @import "general";
 @import "helper";
 
@@ -8,23 +9,48 @@ body {
 }
 
 h1,
+.ds-h1,
+h2,
+.ds-h2,
+h3,
+.ds-h3,
+h4,
+.ds-h4,
+h5,
+.ds-h5,
+p,
+ul {
+    margin-top: 0;
+    margin-bottom: $unit * 2;
+}
+
+h1,
 .ds-h1 {
     font: $font-heading-1;
+    margin-bottom: $unit * 6;
 }
 
 h2,
 .ds-h2 {
     font: $font-heading-2;
+    margin-bottom: $unit * 4;
 }
 
 h3,
 .ds-h3 {
     font: $font-heading-3;
+    margin-bottom: $unit * 3;
 }
 
 h4,
 .ds-h4 {
     font: $font-heading-4;
+    margin-bottom: $unit * 3;
+}
+
+h5,
+.ds-h5 {
+    font: $font-heading-5;
 }
 
 p {
