@@ -57,6 +57,20 @@ p {
     font: $font-text-copy;
 }
 
+small,
+.ds-text-small {
+    display: block;
+    font: $font-text-small;
+}
+
 .ds-text-center {
     text-align: center;
+}
+
+.ds-text-right {
+    text-align: right;
+}
+
+.ds-text-italic {
+    font-style: italic;
 }

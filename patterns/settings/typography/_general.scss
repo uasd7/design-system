@@ -11,7 +11,8 @@ $fontsize-heading-3: 20px !default;
 $fontsize-heading-4: 16px !default;
 $fontsize-heading-5: 12px !default;
 $fontsize-text-copy: 16px !default;
-$fontsize-text-copy--small: 12px !default;
+$fontsize-text-copy--small: 12px !default; //obsolete
+$fontsize-text-small: 12px !default;
 $fontsize-text-marginalia: 10px !default;
 
 $fontsize-button: 15px !default;
@@ -25,7 +26,7 @@ $lineheight-heading-4: $fontsize-heading-4 + $unit !default;
 $lineheight-heading-5: $fontsize-heading-5 + ($unit / 2) !default;
 
 $lineheight-text-copy: $fontsize-text-copy + $unit !default;
-$lineheight-text-copy--small: 1.5 !default;
+$lineheight-text-small: $fontsize-text-small + ($unit / 2) !default;
 $lineheight-text-marginalia: 1.5 !default;
 
 $fontweight-thin: 100;
@@ -48,16 +49,18 @@ $font-heading-4: $fontweight-bold #{$fontsize-heading-4}/#{$lineheight-heading-4
 $font-heading-5: $fontweight-bold #{$fontsize-heading-5}/#{$lineheight-heading-5} $fontfamily-sansserif !default;
 
 $font-text-copy: $fontweight-normal #{$fontsize-text-copy}/#{$lineheight-text-copy} $fontfamily-sansserif !default;
+$font-text-small: $fontweight-normal #{$fontsize-text-small}/#{$lineheight-text-small} $fontfamily-sansserif !default;
 
 /* Styleguide enhancements */
 
 /* stylelint-disable */
 #group-typography-component-headings,
-#group-typography-component-copy-text {
+#group-typography-component-copy-text,
+#group-typography-component-small-text {
   div[class*="component__sample"] {
     background: url("../app/images/baseline-grid-16px.png") repeat 36px 36px;
 
-    h1, h2, h3, h4, h5, p {
+    h1, h2, h3, h4, h5, p, small {
       background-color: rgba($color-corporate-green, 0.15);
     }
   }
