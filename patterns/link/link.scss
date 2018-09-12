@@ -10,3 +10,14 @@
         text-decoration: none;
     }
 }
+
+.ds-heading-link {
+    color: inherit;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+        color: $color-corporate-green;
+        text-decoration: underline;
+    }
+}
