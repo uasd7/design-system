@@ -93,6 +93,17 @@
             ]
         },
         {
+            "name": "links",
+            "title": "Links",
+            "components": [
+                {
+                    "group": "links",
+                    "name": "copy",
+                    "title": "Copy Links"
+                }
+            ]
+        },
+        {
             "name": "buttons",
             "title": "Buttons",
             "components": [

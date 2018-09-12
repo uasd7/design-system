@@ -1,0 +1,12 @@
+
+.ds-copy-link {
+    color: $color-corporate-green;
+    text-decoration: underline;
+
+    &:hover,
+    &:focus {
+        background: rgba($color-corporate-green, 0.2);
+        color: #000;
+        text-decoration: none;
+    }
+}
