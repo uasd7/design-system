@@ -89,9 +89,12 @@ small,
 .ds-list-cloud {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: $unit * 2;
 
     li {
         margin: 0 $unit $unit 0;
+    }
+
+    &:not(:last-of-type) {
+        margin-bottom: $unit * 2;
     }
 }
