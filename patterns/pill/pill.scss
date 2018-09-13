@@ -43,8 +43,8 @@
     @include pill;
 
     // DEFAULT button: #fff text on green background
-    &--tags {
-        @include pill--tags;
+    &--standard {
+        @include pill--standard;
     }
 
     &--active {
@@ -56,7 +56,7 @@
 a.ds-pill {
     text-decoration: none !important;
 
-    &--tags {
+    &--standard {
         color: $color-text--corporate-green !important;
 
         &:active,
