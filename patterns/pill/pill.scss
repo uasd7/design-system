@@ -48,9 +48,12 @@
 }
 
 .ds-pill-icon {
-    display: flex;
+    // we need to overwrite the material-icons styles.
+    // since we're not allowed to use classes without the ds- prefix, we need to use !important
+    // -jLaz
+    display: flex !important;
     align-items: center;
-    font-size: 20px;
+    font-size: 20px !important;
     margin-left: 3px; // this will make 8 in the end
 }
 
