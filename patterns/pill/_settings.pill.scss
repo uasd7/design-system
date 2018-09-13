@@ -1,5 +1,6 @@
+@import "../settings/vars";
 @import "../settings/colors";
 @import "../settings/typography";
 
 // pill variables
-$pill-border-radius: 32px !default;
+$pill-border-radius: $unit * 4 !default;

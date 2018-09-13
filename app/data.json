@@ -130,8 +130,13 @@
             "components": [
                 {
                     "group": "pills",
-                    "name": "standard",
-                    "title": "Standard-Pill"
+                    "name": "tags",
+                    "title": "Tags Pill"
+                },
+                {
+                    "group": "pills",
+                    "name": "filter",
+                    "title": "Filter Pill"
                 }
             ]
         },
