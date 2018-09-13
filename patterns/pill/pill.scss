@@ -5,11 +5,11 @@
 .ds-pill {
     border: 1px solid $color-corporate-green;
     border-radius: $unit * 4;
+    display: inline-block;
+    padding: 3px $unit; // 32px height = 24px line-height + 6px padding + 2px border
     text-decoration: none;
-    padding: 6px $unit; // 32px height at 16px font-size
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-
 
     &:hover,
     &:focus {
