@@ -6,5 +6,5 @@ Optische Auszeichnung über die utility-Klasse `.ds-text-center` möglich.
 
 __Styles__  
 Helvetica Neue Regular  
-F 20px / L 24px / M 16px  
+F 20px / L 32px / M 16px  
 <small>F: Fontsize / L: Line-Height / M: Margin (bottom)</small>

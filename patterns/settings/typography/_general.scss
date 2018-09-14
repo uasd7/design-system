@@ -48,7 +48,7 @@ $font-heading-3: $fontweight-bold #{$fontsize-heading-3}/#{$lineheight-heading-3
 $font-heading-4: $fontweight-bold #{$fontsize-heading-4}/#{$lineheight-heading-4} $fontfamily-sansserif !default;
 $font-heading-5: $fontweight-bold #{$fontsize-heading-5}/#{$lineheight-heading-5} $fontfamily-sansserif !default;
 
-$font-subheading-1: $fontweight-normal #{$fontsize-heading-3}/#{$lineheight-heading-3} $fontfamily-sansserif !default;
+$font-subheading-1: $fontweight-normal #{$fontsize-heading-3}/#{$unit * 4} $fontfamily-sansserif !default;
 
 $font-text-copy: $fontweight-normal #{$fontsize-text-copy}/#{$lineheight-text-copy} $fontfamily-sansserif !default;
 $font-text-small: $fontweight-normal #{$fontsize-text-small}/#{$lineheight-text-small} $fontfamily-sansserif !default;
