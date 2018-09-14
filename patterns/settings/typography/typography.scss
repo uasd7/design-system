@@ -20,14 +20,20 @@ h5,
 .ds-h5,
 p,
 ul {
-    margin-top: 0;
     margin-bottom: $unit * 2;
+    margin-top: 0;
 }
 
 h1,
 .ds-h1 {
     font: $font-heading-1;
     margin-bottom: $unit * 6;
+}
+
+h1 + .ds-sub-h1 {
+    font: $font-subheading-1;
+    margin-bottom: $unit * 2;
+    margin-top: -($unit * 4);
 }
 
 h2,

@@ -68,6 +68,11 @@
                 },
                 {
                     "group": "typography",
+                    "name": "sub-headings",
+                    "title": "Sub Headings"
+                },
+                {
+                    "group": "typography",
                     "name": "copy-text",
                     "title": "Copy Text"
                 },
