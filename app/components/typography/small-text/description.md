@@ -9,5 +9,5 @@ Weitere Textauszeichnungen über utility-Klassen `.ds-text-right` und `.ds-text-
 
 __Styles__  
 Helvetica Neue Regular  
-F 12px / L 24px / M 0    
+F 12px / L 16px / M 0    
 <small>F: Fontsize / L: Line-Height / M: Margin (bottom)</small>
