@@ -58,6 +58,17 @@
     },
     "groups": [
         {
+            "name": "grid",
+            "title": "Grid",
+            "components": [
+                {
+                    "group": "grid",
+                    "name": "grid",
+                    "title": "Grid"
+                }
+            ]
+        },
+        {
             "name": "typography",
             "title": "Typographie",
             "components": [
