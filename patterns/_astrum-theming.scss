@@ -3,7 +3,7 @@
  * Stylelint disalbed for lacking of the "ds-" namespace
  */
 
-/* stylelint-disable selector-class-pattern  */
+/* stylelint-disable  */
 
 .ndpl-sidebar__logo {
     max-width: 100%;
@@ -38,3 +38,46 @@
         width: 17.5%;
     }
 }
+
+/* Typography enhancements */
+
+#group-typography {
+    .ndpl-component__container {
+        background: #fff;
+    }
+
+    div[class*="component__sample"] {
+        background: transparent;
+        z-index: 1;
+
+        &:before {
+            content: '';
+            display: block;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        h1, h2, h3, h4, h5, p, small {
+            background-color: transparent;
+            transition: background-color 0.3s ease 0.15s;
+        }
+
+        &:hover {
+            &:before {
+                background: url("../app/images/baseline-grid-16px.png") repeat 36px 36px;
+                height: 100%;
+                opacity: 1;
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                z-index: -1;
+            }
+
+            h1, h2, h3, h4, h5, p, small {
+                background-color: rgba($color-corporate-green, 0.15);
+            }
+        }
+    }
+}
+/* stylelint-enable */

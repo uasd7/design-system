@@ -52,19 +52,3 @@ $font-subheading-1: $fontweight-normal #{$fontsize-heading-3}/#{$unit * 4} $font
 
 $font-text-copy: $fontweight-normal #{$fontsize-text-copy}/#{$lineheight-text-copy} $fontfamily-sansserif !default;
 $font-text-small: $fontweight-normal #{$fontsize-text-small}/#{$lineheight-text-small} $fontfamily-sansserif !default;
-
-/* Styleguide enhancements */
-
-/* stylelint-disable */
-#group-typography-component-headings,
-#group-typography-component-copy-text,
-#group-typography-component-small-text {
-  div[class*="component__sample"] {
-    background: url("../app/images/baseline-grid-16px.png") repeat 36px 36px;
-
-    h1, h2, h3, h4, h5, p, small {
-      background-color: rgba($color-corporate-green, 0.15);
-    }
-  }
-}
-/* stylelint-enable */
