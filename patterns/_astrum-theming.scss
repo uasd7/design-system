@@ -44,6 +44,24 @@
 #group-typography {
     .ndpl-component__container {
         background: #fff;
+        position: relative;
+
+        &:before {
+            content: 'Hover over this container to see the Baseline Grid.';
+            color: #888;
+            display: block;
+            font-size: 12px;
+            position: absolute;
+            top: 5px;
+            right: 6px;
+            transition: opacity 0.3s ease;
+        }
+
+        &:hover {
+            &:before {
+                opacity: 0;
+            }
+        }
     }
 
     div[class*="component__sample"] {
