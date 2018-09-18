@@ -1,6 +1,7 @@
 // stylelint-disable declaration-no-important
 
 // hide visually (still accessible by screen readers)
+// TODO: why not .sr-only then? Is !important necessary?
 .ds-is-visually-hidden {
     border: 0 !important;
     clip: rect(0 0 0 0) !important;
@@ -10,4 +11,8 @@
     padding: 0 !important;
     position: absolute !important;
     width: 1px !important;
+}
+
+.ds-float-left {
+    float: left;
 }

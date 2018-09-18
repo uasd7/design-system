@@ -39,7 +39,7 @@ $container-m-min: $screen-m;
 		width: $container-s-min;
 	}
 
-	@include media-breakpoint-to(m) {
+	@include media-breakpoint-to(s) {
 		display: flex;
 		flex-direction: column;
 	}
