@@ -13,6 +13,14 @@
     width: 1px !important;
 }
 
+@mixin clearfix() {
+    &::after {
+        display: block;
+        content: "";
+        clear: both;
+    }
+}
+
 .ds-float-left {
     float: left;
 }
