@@ -17,16 +17,6 @@ $gutter-half-small: $gutter-small / 2; //4
 $gutter-half-std: $gutter-std / 2; //8
 $gutter-half-big: $gutter-big / 2; //16
 
-/* screen widths */
-// exact 320px viewport
-$screen-xxs: 320px;
-// from 360px until 599px viewport
-$screen-xs: 360px;
-// from 600px until 959px viewport
-$screen-s: 600px;
-// from 960px viewport
-$screen-m: 960px;
-
 /* content container widths */
 $container-xxs-min: $screen-xxs - ($gutter-small * 2); //320-16=304
 $container-xs-min: $screen-xs;
@@ -35,23 +25,28 @@ $container-m-min: $screen-m;
 
 //.ds-container-fluid,
 .ds-container {
+	box-sizing: border-box;
 	margin-right: auto;
 	margin-left: auto;
 	padding: 0 ($gutter-small / 2);
-	box-sizing: border-box;
 
-	@media screen and (min-width: $screen-xs) {
+	@include media-breakpoint-from(xs) {
 		padding: 0 ($gutter-std / 2);
 		width: $container-xs-min;
 	}
 
-	@media screen and (min-width: $screen-s) {
+	@include media-breakpoint-only(s) {
 		width: $container-s-min;
 	}
 
-	@media screen and (min-width: $screen-m) {
-		width: $container-m-min;
+	@include media-breakpoint-to(m) {
+		display: flex;
+		flex-direction: column;
+	}
+
+	@include media-breakpoint-from(m) {
 		padding: 0 ($gutter-big / 2);
+		width: $container-m-min;
 	}
 }
 
@@ -67,12 +62,12 @@ $container-m-min: $screen-m;
 	margin-right: -($gutter-half-small);
 	margin-left: -($gutter-half-small);
 
-	@media screen and (min-width: $screen-xs) {
+	@include media-breakpoint-from(xs) {
 		margin-right: -($gutter-half-std);
 		margin-left: -($gutter-half-std);
 	}
 
-	@media screen and (min-width: $screen-m) {
+	@include media-breakpoint-from(m) {
 		margin-right: -($gutter-half-big);
 		margin-left: -($gutter-half-big);
 	}
@@ -106,10 +101,13 @@ $container-m-min: $screen-m;
 .ds-col-xs-offset-12 {
 	box-sizing: border-box;
 	flex: 0 1 auto; //grow shrink basis
-	padding-right: $gutter-half-small;
-	padding-left: $gutter-half-small;
 
-	@media screen and (min-width: $screen-xs) {
+	@include media-breakpoint-to(xs) {
+		padding-right: $gutter-half-small;
+		padding-left: $gutter-half-small;
+	}
+
+	@include media-breakpoint-from(xs) {
 		padding-right: $gutter-half-std;
 		padding-left: $gutter-half-std;
 	}
@@ -229,52 +227,7 @@ $container-m-min: $screen-m;
 	margin-left: 91.66666667%;
 }
 
-/*
-.start-xs {
-		justify-content: flex-start;
-		text-align: start;
-}
-
-.center-xs {
-		justify-content: center;
-		text-align: center;
-}
-
-.end-xs {
-		justify-content: flex-end;
-		text-align: end;
-}
-
-.top-xs {
-		align-items: flex-start;
-}
-
-.middle-xs {
-		align-items: center;
-}
-
-.bottom-xs {
-		align-items: flex-end;
-}
-
-.around-xs {
-	justify-content: space-around;
-}
-
-.between-xs {
-		justify-content: space-between;
-}
-
-.first-xs {
-		order: -1;
-}
-
-.last-xs {
-		order: 1;
-}
-*/
-
-@media screen and (min-width: $screen-s) {
+@include media-breakpoint-only(s) {
 	.ds-col-s,
 	.ds-col-s-1,
 	.ds-col-s-2,
@@ -420,54 +373,9 @@ $container-m-min: $screen-m;
 	.ds-col-s-offset-11 {
 		margin-left: 91.66666667%;
 	}
-
-	/*
-	.start-sm {
-			justify-content: flex-start;
-			text-align: start;
-	}
-
-	.center-sm {
-			justify-content: center;
-			text-align: center;
-	}
-
-	.end-sm {
-			justify-content: flex-end;
-			text-align: end;
-	}
-
-	.top-sm {
-			align-items: flex-start;
-	}
-
-	.middle-sm {
-			align-items: center;
-	}
-
-	.bottom-sm {
-			align-items: flex-end;
-	}
-
-	.around-sm {
-			justify-content: space-around;
-	}
-
-	.between-sm {
-			justify-content: space-between;
-	}
-
-	.first-sm {
-			order: -1;
-	}
-
-	.last-sm {
-			order: 1;
-	}
-*/
 }
 
-@media screen and (min-width: $screen-m) {
+@include media-breakpoint-from(m) {
 	.ds-col-m,
 	.ds-col-m-1,
 	.ds-col-m-2,
@@ -613,51 +521,6 @@ $container-m-min: $screen-m;
 	.ds-col-m-offset-11 {
 		margin-left: 91.66666667%;
 	}
-
-	/*
-	.start-md {
-		justify-content: flex-start;
-		text-align: start;
-	}
-
-	.center-md {
-		justify-content: center;
-		text-align: center;
-	}
-
-	.end-md {
-		justify-content: flex-end;
-		text-align: end;
-	}
-
-	.top-md {
-		align-items: flex-start;
-	}
-
-	.middle-md {
-		align-items: center;
-	}
-
-	.bottom-md {
-		align-items: flex-end;
-	}
-
-	.around-md {
-		justify-content: space-around;
-	}
-
-	.between-md {
-		justify-content: space-between;
-	}
-
-	.first-md {
-		order: -1;
-	}
-
-	.last-md {
-		order: 1;
-	}
-	*/
 }
 
 @media (--lg-viewport) {
