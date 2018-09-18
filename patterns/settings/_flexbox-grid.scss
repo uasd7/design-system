@@ -1,81 +1,59 @@
 @import "vars";
 @import "colors";
 
-/* Inspired by http://flexboxgrid.com/
+/* Customizable Flexbox-Grid
+** Inspired by http://flexboxgrid.com/
 ** https://github.com/kristoferjoseph/flexboxgrid/blob/master/src/css/flexboxgrid.css
 */
 
 /* stylelint-disable */
 
 /* gutter widths */
-$gutter-width: $unit * 2;
-$gutter-width-big: $unit * 3;
-$gutter-compensation: ($gutter-width * 0.5) * -1; // (16 * 0,5) * -1 = -8
-$half-gutter-width: $gutter-width * 0.5;
+$gutter-small: $unit; //8
+$gutter-std: $unit * 2; //16
+$gutter-big: $unit * 3; //24
+
+$gutter-half-small: $gutter-small / 2; //4
+$gutter-half-std: $gutter-std / 2; //8
+$gutter-half-big: $gutter-big / 2; //16
 
 /* screen widths */
+// exact 320px viewport
 $screen-xxs: 320px;
+// from 360px until 599px viewport
 $screen-xs: 360px;
+// from 600px until 959px viewport
 $screen-s: 600px;
-$screen-m: 1025px;
-$screen-l: 1300px;
+// from 960px viewport
+$screen-m: 960px;
 
-
-/* container widths */
-$container-xxs-min: $screen-xxs - $gutter-width;
-$container-xs-min: $screen-xs - $gutter-width;
-$container-s-min: $screen-s - $gutter-width;
-$container-m-min: $screen-m - $gutter-width-big;
-$container-l-min: $screen-l - $gutter-width-big;
-
-:root {
-	/*
-	--outer-margin: #{$unit};
-
-	--xs-min: 320;
-	--sm-min: 321;
-	--md-min: 600;
-	--lg-min: 1025;
-	--screen-xs-min: var(--xs-min)px;
-	--screen-sm-min: var(--sm-min)px;
-	--screen-md-min: var(--md-min)px;
-	--screen-lg-min: var(--lg-min)px;
-	--container-sm: calc(var(--sm-min) - $gutter-width);
-	--container-md: calc(var(--md-min) - $gutter-width-big);
-	--container-lg: calc(var(--lg-min) - $gutter-width-big);
-	*/
-}
-
-@custom-media --md-viewport only screen and (min-width: 1025px);
-@custom-media --lg-viewport only screen and (min-width: 1300px);
+/* content container widths */
+$container-xxs-min: $screen-xxs - ($gutter-small * 2); //320-16=304
+$container-xs-min: $screen-xs;
+$container-s-min: $screen-s;
+$container-m-min: $screen-m;
 
 //.ds-container-fluid,
 .ds-container {
 	margin-right: auto;
 	margin-left: auto;
-}
+	padding: 0 ($gutter-small / 2);
+	box-sizing: border-box;
 
-@media screen and (min-width: $screen-s) {
-	.ds-container {
+	@media screen and (min-width: $screen-xs) {
+		padding: 0 ($gutter-std / 2);
+		width: $container-xs-min;
+	}
+
+	@media screen and (min-width: $screen-s) {
 		width: $container-s-min;
 	}
-}
 
-@media screen and (min-width: $screen-m) {
-	.ds-container {
+	@media screen and (min-width: $screen-m) {
 		width: $container-m-min;
+		padding: 0 ($gutter-big / 2);
 	}
 }
-
-
-
-
-/*
-.ds-container-fluid {
-	padding-right: var(--outer-margin, 2rem);
-	padding-left: var(--outer-margin, 2rem);
-}
-*/
 
 .ds-grid {
 	box-sizing: border-box;
@@ -86,16 +64,18 @@ $container-l-min: $screen-l - $gutter-width-big;
 }
 
 .ds-row {
-	margin-right: $gutter-compensation;
-	margin-left: $gutter-compensation;
-}
+	margin-right: -($gutter-half-small);
+	margin-left: -($gutter-half-small);
 
-.ds-row.ds-reverse {
-	flex-direction: row-reverse;
-}
+	@media screen and (min-width: $screen-xs) {
+		margin-right: -($gutter-half-std);
+		margin-left: -($gutter-half-std);
+	}
 
-.ds-col.ds-reverse {
-	flex-direction: column-reverse;
+	@media screen and (min-width: $screen-m) {
+		margin-right: -($gutter-half-big);
+		margin-left: -($gutter-half-big);
+	}
 }
 
 .ds-col-xs,
@@ -126,8 +106,13 @@ $container-l-min: $screen-l - $gutter-width-big;
 .ds-col-xs-offset-12 {
 	box-sizing: border-box;
 	flex: 0 0 auto;
-	padding-right: $half-gutter-width;
-	padding-left: $half-gutter-width;
+	padding-right: $gutter-half-small;
+	padding-left: $gutter-half-small;
+
+	@media screen and (min-width: $screen-xs) {
+		padding-right: $gutter-half-std;
+		padding-left: $gutter-half-std;
+	}
 }
 
 .ds-col-xs {
@@ -273,7 +258,7 @@ $container-l-min: $screen-l - $gutter-width-big;
 }
 
 .around-xs {
-	justify-content:;ustify-content: space-around;
+	justify-content: space-around;
 }
 
 .between-xs {
@@ -318,8 +303,8 @@ $container-l-min: $screen-l - $gutter-width-big;
 	.ds-col-sm-offset-12 {
 		box-sizing: border-box;
 		flex: 0 0 auto;
-		padding-right: $half-gutter-width;
-		padding-left: $half-gutter-width;
+		padding-right: $gutter-half-std;
+		padding-left: $gutter-half-std;
 	}
 
 	.ds-col-sm {
@@ -511,8 +496,8 @@ $container-l-min: $screen-l - $gutter-width-big;
 	.ds-col-md-offset-12 {
 		box-sizing: border-box;
 		flex: 0 0 auto;
-		padding-right: $half-gutter-width;
-		padding-left: $half-gutter-width;
+		padding-right: $gutter-half-big;
+		padding-left: $gutter-half-big;
 	}
 
 	.ds-col-md {
@@ -704,8 +689,8 @@ $container-l-min: $screen-l - $gutter-width-big;
 	.ds-col-lg-offset-12 {
 		box-sizing: border-box;
 		flex: 0 0 auto;
-		padding-right: $half-gutter-width;
-		padding-left: $half-gutter-width;
+		padding-right: $gutter-half-big;
+		padding-left: $gutter-half-big;
 	}
 
 	.ds-col-lg {
@@ -822,6 +807,8 @@ $container-l-min: $screen-l - $gutter-width-big;
 		margin-left: 91.66666667%;
 	}
 }
+
+/* for DSY view*/
 
 .ds-box-row {
 	background: $color-corporate-green;
