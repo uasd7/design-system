@@ -13,7 +13,7 @@
     width: 1px !important;
 }
 
-@mixin clearfix() {
+@mixin clearfix {
     &::after {
         display: block;
         content: "";
@@ -21,6 +21,6 @@
     }
 }
 
-.ds-float-left {
+@mixin ds-float-left {
     float: left;
 }

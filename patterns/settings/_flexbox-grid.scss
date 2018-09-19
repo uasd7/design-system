@@ -28,10 +28,10 @@ $container-m-min: $screen-m;
 	box-sizing: border-box;
 	margin-right: auto;
 	margin-left: auto;
-	padding: 0 ($gutter-small / 2);
+	padding: 0 $gutter-half-small;
 
 	@include media-breakpoint-from(xs) {
-		padding: 0 ($gutter-std / 2);
+		padding: 0 $gutter-half-std;
 		width: $container-xs-min;
 	}
 
@@ -45,7 +45,7 @@ $container-m-min: $screen-m;
 	}
 
 	@include media-breakpoint-from(m) {
-		padding: 0 ($gutter-big / 2);
+		padding: 0 $gutter-half-big;
 		width: $container-m-min;
 	}
 }
