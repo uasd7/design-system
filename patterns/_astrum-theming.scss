@@ -39,15 +39,22 @@
     }
 }
 
-/* Typography enhancements */
+/* Grid enhancements */
 
 #group-grid {
     .ndpl-component__sample {
-        background: #eee;
         padding-left: 0;
         padding-right: 0;
+        text-align: center;
+
+        .ds-container {
+            background: #eee;
+            padding-top: $unit;
+        }
     }
 }
+
+/* Typography enhancements */
 
 #group-typography {
     .ndpl-component__container {
