@@ -95,19 +95,40 @@
 
 /* Typography enhancements */
 
-#group-typography {
+#group-typography,
+#group-links {
     .ndpl-component__container {
         background: #fff;
         position: relative;
 
         &:before {
-            content: 'Hover over this container to see the Baseline Grid.';
             color: #888;
             display: block;
             font-size: 12px;
             position: absolute;
             top: 5px;
             right: 6px;
+        }
+    }
+
+    div[class*="component__sample"] {
+        background: transparent;
+        z-index: 1;
+    }
+}
+
+#group-links {
+    .ndpl-component__container {
+        &:before {
+            content: 'Hover over the Links to see them in action.';
+        }
+    }
+}
+
+#group-typography {
+    .ndpl-component__container {
+        &:before {
+            content: 'Hover over this container to see the Baseline Grid.';
             transition: opacity 0.3s ease;
         }
 
@@ -119,9 +140,6 @@
     }
 
     div[class*="component__sample"] {
-        background: transparent;
-        z-index: 1;
-
         &:before {
             content: '';
             display: block;
