@@ -12,5 +12,5 @@ Weitere Textauszeichnungen über utility-Klasse `.ds-text-center` möglich.
 __Styles__  
 Helvetica Neue Regular  
 Im __main-content__: F 16px / L 24px / M 16    
-Im der __sidebar__: F 12px / L 16px / M 16 (mit `.ds-text-small`, siehe Typographie / Small Text)
+In der __sidebar__: F 12px / L 16px / M 16 (mit `.ds-text-small`, siehe Typographie / Small Text)
 <small>F: Fontsize / L: Line-Height / M: Margin (bottom)</small>
