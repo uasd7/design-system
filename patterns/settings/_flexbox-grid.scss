@@ -671,19 +671,4 @@ $container-m-min: $screen-m;
 	}
 }
 
-/* for DSY view*/
-
-.ds-box-row {
-	background: $color-corporate-green;
-	border: 1px solid $color-corporate-green;
-	box-sizing: border-box;
-	color: $color-white;
-	font-size: 10px;
-	height: $unit * 2;
-	margin-bottom: $unit;
-	overflow: hidden;
-	position: relative;
-	text-align: center;
-}
-
 /* stylelint-enable */

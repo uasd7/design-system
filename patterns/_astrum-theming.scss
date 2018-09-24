@@ -50,8 +50,47 @@
         .ds-container {
             background: #eee;
             padding-top: $unit;
+
+            // for presentation purposes only
+            &.ds-grid-xxs {
+                @include media-breakpoint-to(m) {
+                    padding: 0 $gutter-half-small;
+                    padding-top: $unit;
+
+                    [class*="col-xs"] {
+                        padding-right: $gutter-half-small;
+                        padding-left: $gutter-half-small;
+                    }
+                }
+            }
+
+            &.ds-grid-xs {
+                @include media-breakpoint-between(xs,m) {
+                    padding: 0 $gutter-half-std;
+                    padding-top: $unit;
+
+                    [class*="col-xs"] {
+                        padding-right: $gutter-half-std;
+                        padding-left: $gutter-half-std;
+                    }
+                }
+            }
         }
     }
+}
+
+.ds-box-row {
+    background: $color-corporate-green;
+    border: 1px solid $color-corporate-green;
+    box-sizing: border-box;
+    color: $color-white;
+    font-size: 10px;
+    height: $unit * 2;
+    letter-spacing: 0.5px;
+    margin-bottom: $unit;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
 }
 
 /* Typography enhancements */
