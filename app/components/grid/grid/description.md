@@ -1,1 +1,1 @@
-__NOTE:__ Dadurch, dass wir verschiedene Gutter außerhalb und zwischen den Columns haben, ist es leider notwendig alle grid-Klassen auf die entsprechende column zu schreiben; auch wenn sich das Verhältnis ansonsten nicht ändert.
+__NOTE:__ Dadurch, dass wir verschiedene Gutter außerhalb und zwischen den Columns haben, ist es leider notwendig alle grid-Klassen (col-xs, col-s, col-m..) auf die entsprechende column zu schreiben; auch wenn sich das Verhältnis der column ansonsten nicht ändert.
