@@ -69,6 +69,20 @@
             ]
         },
         {
+            "name": "colors",
+            "title": "Farben",
+            "components": [
+                {
+                    "group": "colors",
+                    "name": "colors",
+                    "title": "Corporate Farben",
+                    "options": {
+                        "disable_code_sample": true
+                    }
+                }
+            ]
+        },
+        {
             "name": "typography",
             "title": "Typographie",
             "components": [
@@ -91,20 +105,6 @@
                     "group": "typography",
                     "name": "small-text",
                     "title": "Small Text"
-                }
-            ]
-        },
-        {
-            "name": "colors",
-            "title": "Farben",
-            "components": [
-                {
-                    "group": "colors",
-                    "name": "colors",
-                    "title": "Corporate Farben",
-                    "options": {
-                        "disable_code_sample": true
-                    }
                 }
             ]
         },

@@ -9,37 +9,77 @@
     max-width: 100%;
 }
 
-.cds-color-wrapper {
-    display: flex;
-    margin-bottom: 3%;
-
-    &:last-child {
-        margin-bottom: 0;
-    }
-
-    h3 {
-        margin-top: 0;
-    }
-}
-
 .note-container-example {
     background: #999;
     padding: 20px 0;
 }
 
-
+.ndpl-group__description,
 .ndpl-component__description {
-    p { font-size: 16px; }
-}
+    p {
+        font-size: $fontsize-text-copy;
+    }
 
-@media only screen and (max-width: 60em) {
-    .ndpl-component__color-container {
-        margin-right: 3%;
-        width: 17.5%;
+    code {
+        color: $color-grey-dark;
     }
 }
 
-/* Grid enhancements */
+/* Colours enhancements
+----------------------------------- */
+
+.ndpl-component__color-container {
+    width: 100%;
+    margin: 0;
+}
+
+.cds-color-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: $unit * 3;
+
+    @extend .ds-col-xs-12;
+    @extend .ds-col-s-6;
+    @extend .ds-col-m-4;
+}
+
+#group-colors {
+    .ds-grid:first-child {
+        .cds-color-wrapper {
+            @extend .ds-col-m-6;
+        }
+    }
+
+    .ndpl-component__sample {
+        code {
+            display: block;
+            font-size: $fontsize-text-copy;
+            margin-bottom: $unit;
+        }
+
+        small {
+            color: $color-grey-dark;
+
+            code {
+                display: inline-block;
+                font-size: $fontsize-text-small;
+            }
+        }
+    }
+}
+
+.ndpl-component__color {
+    @include media-breakpoint-to(m) {
+        padding: ($unit * 6) 0;
+    }
+}
+
+.ndpl-component__color:first-of-type {
+    margin-bottom: $unit;
+}
+
+/* Grid enhancements
+----------------------------------- */
 
 #group-grid {
     .ndpl-component__sample {
@@ -93,7 +133,8 @@
     text-align: center;
 }
 
-/* Typography enhancements */
+/* Typography enhancements
+----------------------------------- */
 
 #group-typography,
 #group-links {
