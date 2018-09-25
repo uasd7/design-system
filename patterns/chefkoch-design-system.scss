@@ -1,15 +1,13 @@
-@import "settings/vars";
-@import "utilities/breakpoints";
-@import "settings/flexbox-grid";
-@import "settings/typography/typography";
-@import "icon/icon";
+@import "dsy-base";
+
 @import "button/button";
+@import "icon/icon";
 @import "link/link";
 @import "pill/pill";
 @import "note/note";
 @import "stars/stars";
 @import "tabs/tabs";
+
 @import "utilities/display-utilities";
-@import "utilities/spacing";
 
 @import "astrum-theming";

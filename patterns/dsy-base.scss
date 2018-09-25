@@ -1,0 +1,16 @@
+/* NOTE:
+** These are the base files to make DSY work in your project.
+** Do not change that order.
+** use @import "~chefkoch-design-system/patterns/dsy-base"; first before including patterns
+*/
+
+// base vars
+@import "base/vars";
+// breakpoints using base vars
+@import "base/breakpoints";
+// grid using breakpoints
+@import "base/flexbox-grid";
+// typography's settings using base vars
+@import "base/typography";
+
+@import "base/colors";
