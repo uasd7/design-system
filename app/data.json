@@ -137,6 +137,11 @@
                     "group": "buttons",
                     "name": "variations",
                     "title": "Variationen"
+                },
+                {
+                    "group": "buttons",
+                    "name": "deactivated",
+                    "title": "Inaktiv / Deaktiviert"
                 }
             ]
         },

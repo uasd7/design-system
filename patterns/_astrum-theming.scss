@@ -137,7 +137,8 @@
 ----------------------------------- */
 
 #group-typography,
-#group-links {
+#group-links,
+#group-buttons {
     .ndpl-component__container {
         background: #fff;
         position: relative;
@@ -208,6 +209,20 @@
             h1, h2, h3, h4, h5, p, small {
                 background-color: rgba($color-corporate-green, 0.15);
             }
+        }
+    }
+}
+
+/* Button enhancements
+----------------------------------- */
+
+#group-buttons {
+    .ndpl-component__container {
+        background: #fff;
+        position: relative;
+
+        &:before {
+            content: 'Hover over or click the Buttons to see hover and focus states.';
         }
     }
 }

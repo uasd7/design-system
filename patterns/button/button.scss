@@ -1,13 +1,60 @@
 @import "tools.button";
 
-// Buttons
-// https://wiki.chefkoch.de/display/LS/Buttons
 .ds-button {
-    @include button;
+    background: transparent;
+    border: 1px solid;
+    border-radius: $unit / 2;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    font-size: inherit;
+    line-height: $lineheight-text-copy;
+    margin-bottom: $unit * 2;
+    padding: ($unit - 1) ($unit * 1.5); // $unit - 1 b/c 1px border
+    text-decoration: none;
+    transition: background 0.3s ease-in;
 
-    // DEFAULT button: #fff text on green background
+    // normalize inner #fffspace in Firefox
+    &::-moz-focus-inner {
+        padding: 0;
+        border: 0;
+    }
+
+    i {
+        font-size: 20px;
+        margin-right: $unit;
+    }
+
     &--standard {
-        @include button--standard;
+        background-color: $color-corporate-green;
+        border-color: $color-corporate-green;
+        color: $color-text-inverted;
+
+        &:active,
+        &:focus,
+        &:hover {
+            background-color: $color-corporate-green-dark;
+        }
+    }
+
+    &-wide {
+        justify-content: center;
+        width: 100%;
+        max-width: 280px;
+    }
+
+    &-deactivated {
+        background-color: $color-grey-dark;
+        border-color: $color-grey-dark;
+
+        &:active,
+        &:focus,
+        &:hover {
+            background-color: $color-grey-dark;
+            border-color: $color-grey-dark;
+            cursor: not-allowed;
+        }
     }
 
     // LIGHT button: green text on #fff with green border
@@ -35,10 +82,12 @@
         @include button--bigboss;
     }
 
+    /*
     // TEXT-BLACK button: link button with black colored text on transparent background. Without border.
     &--text-black {
         @include button--text-black;
     }
+    */
 }
 
 // Link resets until style leaks are fixed
@@ -52,13 +101,13 @@ a.ds-button {
     }
 
     &--light {
-        color: $color-text--corporate-green !important;
+        color: $color-corporate-green-dark !important;
 
         &:active,
         &:focus,
         &:hover {
             color: #fff !important;
-            background-color: $color-text--corporate-green !important;
+            background-color: $color-corporate-green-dark !important;
         }
     }
 }
