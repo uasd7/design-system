@@ -131,17 +131,32 @@
                 {
                     "group": "buttons",
                     "name": "standard",
-                    "title": "Standard-Button"
+                    "title": "Standard Button"
+                },
+                {
+                    "group": "buttons",
+                    "name": "big",
+                    "title": "Big Button"
+                },
+                {
+                    "group": "buttons",
+                    "name": "wide",
+                    "title": "Wide Button"
                 },
                 {
                     "group": "buttons",
                     "name": "variations",
-                    "title": "Variationen"
+                    "title": "Button Variationen"
                 },
                 {
                     "group": "buttons",
                     "name": "deactivated",
                     "title": "Inaktiv / Deaktiviert"
+                },
+                {
+                    "group": "buttons",
+                    "name": "light",
+                    "title": "Light Button"
                 }
             ]
         },

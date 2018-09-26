@@ -1,2 +1,2 @@
-Der Standard-Button ist grün mit weißer Schrift. Er kann sowohl als <code>a</code>-Elemente, als auch Elemente vom
-Typ <code>button</code> oder <code>input</code>-Buttons angewendet werden.
+Standard buttons dürfen material-icons haben.  
+Iconregel: Icons stehen visuell immer links vom Text, im Code daher immer vor dem Text.

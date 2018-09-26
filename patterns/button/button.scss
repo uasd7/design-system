@@ -1,8 +1,6 @@
-@import "tools.button";
-
 .ds-button {
     background: transparent;
-    border: 1px solid;
+    border: 0;
     border-radius: $unit / 2;
     box-sizing: border-box;
     cursor: pointer;
@@ -11,9 +9,9 @@
     font-size: inherit;
     line-height: $lineheight-text-copy;
     margin-bottom: $unit * 2;
-    padding: ($unit - 1) ($unit * 1.5); // $unit - 1 b/c 1px border
+    padding: $unit ($unit * 1.5);
     text-decoration: none;
-    transition: background 0.3s ease-in;
+    transition: background 0.2s, border-color 0.2s, color 0.2s;
 
     // normalize inner #fffspace in Firefox
     &::-moz-focus-inner {
@@ -28,7 +26,6 @@
 
     &--standard {
         background-color: $color-corporate-green;
-        border-color: $color-corporate-green;
         color: $color-text-inverted;
 
         &:active,
@@ -38,76 +35,92 @@
         }
     }
 
-    &-wide {
-        justify-content: center;
-        width: 100%;
-        max-width: 280px;
-    }
-
-    &-deactivated {
-        background-color: $color-grey-dark;
-        border-color: $color-grey-dark;
+    &--light {
+        border: 1px solid $color-corporate-green;
+        color: $color-corporate-green-dark;
+        font-weight: $fontweight-bold;
+        padding: ($unit - 1) ($unit * 1.5); // $unit - 1 b/c 1px border
 
         &:active,
         &:focus,
         &:hover {
-            background-color: $color-grey-dark;
-            border-color: $color-grey-dark;
-            cursor: not-allowed;
+            color: $color-text-inverted;
+            background-color: $color-corporate-green-dark;
         }
     }
 
-    // LIGHT button: green text on #fff with green border
-    &--light {
-        @include button--light;
-    }
-
-    // INFO button: #fff text on blue background
     &--info {
-        @include button--info;
+        background-color: $color-blue;
+        color: $color-text-inverted;
+
+        &:active,
+        &:focus,
+        &:hover {
+            background-color: $color-blue-dark;
+        }
     }
 
-    // WARNING button: #fff text on yellow background
     &--warning {
-        @include button--warning;
+        background-color: $color-yellow;
+        color: $color-text-inverted;
+
+        &:active,
+        &:focus,
+        &:hover {
+            background-color: $color-yellow-dark;
+        }
     }
 
-    // DANGER (error, fatal warning) button: #fff text on red background
     &--danger {
-        @include button--danger;
+        background-color: $color-red;
+        color: $color-text-inverted;
+
+        &:active,
+        &:focus,
+        &:hover {
+            background-color: $color-red-dark;
+        }
     }
 
-    // BIGBOSS (super important action) button: big version of any variation, can only be used once per page
     &--bigboss {
-        @include button--bigboss;
+        padding: ($unit * 2) ($unit * 3);
     }
-
-    /*
-    // TEXT-BLACK button: link button with black colored text on transparent background. Without border.
-    &--text-black {
-        @include button--text-black;
-    }
-    */
 }
 
-// Link resets until style leaks are fixed
-a.ds-button {
-    text-decoration: none !important;
+.ds-button-wide {
+    justify-content: center;
+    width: 100%;
+    max-width: 280px;
+}
 
-    &--standard,
-    &--info,
-    &--danger {
-        color: #fff !important;
+.ds-button-deactivated {
+    background-color: $color-grey-dark;
+
+    &:active,
+    &:focus,
+    &:hover {
+        background-color: $color-grey-dark;
     }
+}
 
-    &--light {
-        color: $color-corporate-green-dark !important;
+.ds-button--light.ds-button-deactivated {
+    background-color: $color-white;
+    border-color: $color-grey-dark;
+    color: $color-grey-dark;
 
-        &:active,
-        &:focus,
-        &:hover {
-            color: #fff !important;
-            background-color: $color-corporate-green-dark !important;
-        }
+    &:active,
+    &:focus,
+    &:hover {
+        background-color: $color-white;
+        border-color: $color-grey-dark;
+        color: $color-grey-dark;
+    }
+}
+
+.ds-button[class*="deactivated"] {
+    &:active,
+    &:focus,
+    &:hover {
+        cursor: not-allowed;
     }
 }

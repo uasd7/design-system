@@ -23,10 +23,14 @@ $color-white:                   #fff;
 /* other colours
 ----------------------------------- */
 
-$color-red:         #ff665e; // 2.87 fails to #fff
-$color-yellow:      #ebc315; // 1.7 fails to #fff
-$color-blue:        #007c8c; // 4.92 Ratio (AA) to #fff
-$color-purple:      #bf538d; // 4.34 Ratio (AA) to #fff
+$color-red:             #ff665e; // 2.87 fails to #fff
+$color-red-dark:        #a9423c;
+$color-yellow:          #ebc315; // 1.7 fails to #fff
+$color-yellow-dark:     #dbb007;
+$color-blue:            #007c8c; // 4.92 Ratio (AA) to #fff
+$color-blue-dark:       #006a78;
+
+$color-purple:          #bf538d; // 4.34 Ratio (AA) to #fff
 
 /* specified usages
 ----------------------------------- */
