@@ -1,4 +1,20 @@
-@import "dsy-base";
+// base vars
+@import "base/vars";
+
+/* screen width for DSY site
+** from 960px (viewport) .ndpl-content width
+** because sidebar on the left & padding
+*/
+$screen-m: 960px + 312px + 48px;
+
+// breakpoints using base vars
+@import "base/breakpoints";
+// grid using breakpoints
+@import "base/flexbox-grid";
+// typography's settings using base vars
+@import "base/typography";
+
+@import "base/colors";
 
 @import "button/button";
 @import "icon/icon";
