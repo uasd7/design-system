@@ -69,7 +69,8 @@ Sometimes it could be use full to work with branches and use the code of the bra
 + create branch at design-system (DSY)
 + now/direct update at package.json the version number of the design-system package (eg. "1.0.2-alpha"). This is required to ensure a save "./wok install" at the client project.
 + travis-ci build the branch and test it on every commit - but travis don't publish anything
-+ at the client project (eg. recipe-amp) you can now reference the commit hash (from design-system) you want in package.json like `"chefkoch-design-system": "chefkoch-dev/design-system#87e173d",`
++ at the client project (eg. recipe-amp) you can now reference the commit hash (from design-system) you want in package.json like `"chefkoch-design-system": "git://github.com/chefkoch-dev/design-system.git#87e173d",`
+    + git://... url is the only way that works :-/
 + update at the client project your npm packages to get the commit via github. (eg. "./wok install")
 + before merge the branch to master, set the correct version number and tag on master
 
