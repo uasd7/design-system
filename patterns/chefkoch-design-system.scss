@@ -16,13 +16,13 @@ $screen-m: 960px + 312px + 48px;
 
 @import "base/colors";
 
-@import "button/button";
-@import "icon/icon";
-@import "link/link";
-@import "pill/pill";
-@import "note/note";
-@import "stars/stars";
-@import "tabs/tabs";
+@import "button";
+@import "icon";
+@import "link";
+@import "pill";
+@import "note";
+@import "stars";
+@import "tabs";
 
 @import "dsy-utilities";
 

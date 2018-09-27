@@ -38,8 +38,8 @@ __Patterns__
 
 Einzelne Patterns werden nach gleichem Prinzip ins Projekt geholt.
 
-    @import "~chefkoch-design-system/patterns/button/button";
-    @import "~chefkoch-design-system/patterns/pill/pill";
+    @import "~chefkoch-design-system/patterns/button";
+    @import "~chefkoch-design-system/patterns/stars";
 
 Wie du das entsprechende Styling eines Patterns verwendest, erfährst du in den einzelnen Abschnitten der Komponenten.
 
