@@ -16,3 +16,7 @@ Für alle Buttons:
 
 __Styles__  
  geerbt von Copy Text
+
+__Usage__  
+    
+    @import "~chefkoch-design-system/patterns/button";

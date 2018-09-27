@@ -43,12 +43,12 @@ Einzelne Patterns werden nach gleichem Prinzip ins Projekt geholt.
 
 Wie du das entsprechende Styling eines Patterns verwendest, erfährst du in den einzelnen Abschnitten der Komponenten.
 
-__Utilities__
+__Utilities__ 
 
 Das DSY bietet auch standard Utilities an.
 Alle Utilities bekommst du über
 
-    @import "~chefkoch-design-system/patterns/dsy-utilities;
+    @import "~chefkoch-design-system/patterns/dsy-utilities";
 
 Darin enthalten sind folgende Bestandteile:  
 

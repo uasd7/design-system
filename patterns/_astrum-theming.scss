@@ -22,6 +22,15 @@
 
     code {
         color: $color-grey-dark;
+        font-size: 14px;
+    }
+
+    pre {
+        code {
+            background: $color-sand;
+            border: 1px solid $color-grey-medium;
+            padding: $unit;
+        }
     }
 }
 
