@@ -14,7 +14,7 @@
 
     .ds-tags & {
         background: $color-corporate-green;
-        color: $color-white;
+        color: $color-text-inverted;
 
         &:hover,
         &:focus {
@@ -24,12 +24,12 @@
 
     .ds-filter & {
         background: $color-white;
-        color: $color-black;
+        color: $color-text;
 
         &:hover,
         &:focus {
             background: $color-corporate-green-dark;
-            color: $color-white;
+            color: $color-text-inverted;
         }
     }
 }
@@ -39,7 +39,7 @@
 
     .ds-filter & {
         background: $color-corporate-green;
-        color: $color-white;
+        color: $color-text-inverted;
     }
 
     // material-icons
