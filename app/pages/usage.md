@@ -19,6 +19,21 @@ includePath für das Design-System gesetzt sein:
 
 ## 3. Einbindung und Nutzung der Patterns
 Ein Pattern aus dem Design-System muss erst per scss eingebunden werden:
+    
+__Base__  
+Die grundlegenden Basics bekommst du über 
+
+    @import "~chefkoch-design-system/patterns/dsy-base";
+    
+Darin enthalten sind folgende Mindestbestandteile des DSY:  
+• Variables <small>@import "~chefkoch-design-system/patterns/base/vars";</small>
+• Breakpoints
+  <small>@import "~chefkoch-design-system/patterns/base/breakpoints";</small>
+• Grid <small>@import "~chefkoch-design-system/patterns/base/flexbox-grid";</small>
+• Typography <small>@import "~chefkoch-design-system/patterns/base/typography";</small>
+• Colors <small>@import "~chefkoch-design-system/patterns/base/colors";</small>
+
+__Patterns__  
 
     @import 'button/button'
 
