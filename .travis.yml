@@ -5,6 +5,7 @@ branches:
   only:
   - master
   - travis
+  - "/^feature/.*$/"
   - "/^v\\d+\\.\\d+(\\.\\d+)?(-\\S*)?$/"
   - "/^deploy-.*$/"
   - "/^GH-.*$/"
