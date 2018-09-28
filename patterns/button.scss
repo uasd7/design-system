@@ -94,6 +94,16 @@
     max-width: 280px;
 }
 
+.ds-button-text {
+    font-weight: $fontweight-bold;
+
+    &:active,
+    &:focus,
+    &:hover {
+        color: $color-corporate-green-dark;
+    }
+}
+
 .ds-button-deactivated {
     background-color: $color-grey-dark;
 
@@ -116,6 +126,11 @@
         border-color: $color-grey-dark;
         color: $color-grey-dark;
     }
+}
+
+.ds-button-text.ds-button-deactivated {
+    background-color: $color-white;
+    color: $color-grey-dark;
 }
 
 .ds-button[class*="deactivated"] {

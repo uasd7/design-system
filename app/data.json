@@ -157,6 +157,11 @@
                     "group": "buttons",
                     "name": "light",
                     "title": "Light Button"
+                },
+                {
+                    "group": "buttons",
+                    "name": "text",
+                    "title": "Text Button"
                 }
             ]
         },
