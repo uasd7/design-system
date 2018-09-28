@@ -6,3 +6,7 @@ Typografie geerbt von Copy Text. Font-size geerbt von aside.
  
 H 32px / M 8    
 <small>H: Height / M: Margin (bottom)</small>
+
+__Usage__  
+    
+    @import "~chefkoch-design-system/patterns/pill";
