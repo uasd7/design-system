@@ -71,6 +71,12 @@ $container-m-min: $screen-m;
 	}
 }
 
+.ds-box {
+	padding-bottom: $unit * 2;
+	padding-top: $unit;
+	position: relative;
+}
+
 .ds-col-xs,
 .ds-col-xs-1,
 .ds-col-xs-2,
