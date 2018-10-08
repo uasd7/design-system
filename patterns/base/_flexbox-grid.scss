@@ -20,7 +20,6 @@ $container-xs-min: $screen-xs;
 $container-s-min: $screen-s;
 $container-m-min: $screen-m;
 
-//.ds-container-fluid,
 .ds-container {
 	box-sizing: border-box;
 	margin-right: auto;
@@ -29,11 +28,13 @@ $container-m-min: $screen-m;
 
 	@include media-breakpoint-from(xs) {
 		padding: 0 $gutter-half-std;
-		width: $container-xs-min;
+		// container is fluid
+		width: 100%;
 	}
 
 	@include media-breakpoint-only(s) {
-		width: $container-s-min;
+		// container is fluid till 600px
+		max-width: $container-s-min;
 	}
 
 	@include media-breakpoint-to(s) {
