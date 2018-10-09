@@ -2,7 +2,8 @@
     border: 1px solid $color-corporate-green;
     border-radius: $unit * 4;
     display: flex;
-    padding: 3px $unit; // 32px height = 24px line-height + 6px padding + 2px border
+    font-size: 14px;
+    padding: 5px $unit 4px; // 32px height
     text-decoration: none;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -35,7 +36,7 @@
 }
 
 .ds-pill-active {
-    padding: 3px ($unit / 2) 3px $unit;
+    padding: 5px ($unit / 2) 4px $unit;
 
     .ds-filter & {
         background: $color-corporate-green;
@@ -46,7 +47,7 @@
     i {
         display: flex;
         align-items: center;
-        font-size: 14px;
+        font-size: 16px;
         margin-left: 3px; // this will make 8 in the end
     }
 }
