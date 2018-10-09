@@ -43,6 +43,11 @@
 .ds-pill-active {
     padding: 5px ($unit / 2) 5px $unit;
 
+    /* firefox only */
+    @-moz-document url-prefix() {
+        padding: 4px ($unit / 2) 6px $unit;
+    }
+
     .ds-filter & {
         background: $color-corporate-green;
         color: $color-text-inverted;
@@ -54,5 +59,10 @@
         align-items: center;
         font-size: 16px;
         margin-left: 3px; // this will make 8 in the end
+
+        /* firefox only */
+        @-moz-document url-prefix() {
+            margin-top: 1px;
+        }
     }
 }
