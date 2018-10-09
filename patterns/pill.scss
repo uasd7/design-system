@@ -8,6 +8,11 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 
+    /* firefox only */
+    @-moz-document url-prefix() {
+        padding: 4px $unit 6px;
+    }
+
     &:hover,
     &:focus {
         border-color: $color-corporate-green-dark;
