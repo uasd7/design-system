@@ -9,7 +9,7 @@
     -moz-osx-font-smoothing: grayscale;
 
     /* firefox only */
-    @-moz-document url-prefix() {
+    @supports (-moz-appearance:none) {
         padding: 4px $unit 6px;
     }
 
@@ -44,7 +44,7 @@
     padding: 5px ($unit / 2) 5px $unit;
 
     /* firefox only */
-    @-moz-document url-prefix() {
+    @supports (-moz-appearance:none) {
         padding: 4px ($unit / 2) 6px $unit;
     }
 
@@ -61,7 +61,7 @@
         margin-left: 3px; // this will make 8 in the end
 
         /* firefox only */
-        @-moz-document url-prefix() {
+        @supports (-moz-appearance:none) {
             margin-top: 1px;
         }
     }
