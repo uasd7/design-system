@@ -1,5 +1,5 @@
 .ds-copy-link {
-    color: $color-corporate-green;
+    color: $color-corporate-green-dark;
     text-decoration: underline;
 
     &:hover,
@@ -18,7 +18,7 @@ a.ds-heading-link {
 
     &:hover,
     &:focus {
-        color: $color-corporate-green;
+        color: $color-corporate-green-dark;
         text-decoration: underline;
     }
 }
@@ -29,7 +29,7 @@ a {
     &:hover,
     &:focus {
         .ds-heading-link {
-            color: $color-corporate-green;
+            color: $color-corporate-green-dark;
             text-decoration: underline;
         }
     }
