@@ -15,10 +15,10 @@ $screen-m: 960px + 312px + 48px;
 @import "base/typography";
 
 @import "base/colors";
+@import "base/link";
 
 @import "button";
 @import "icon";
-@import "link";
 @import "pill";
 @import "note";
 @import "stars";
