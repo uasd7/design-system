@@ -3,7 +3,7 @@
     border-radius: $unit * 4;
     display: flex;
     font-size: 14px;
-    padding: 5px $unit 4px; // 32px height
+    padding: 5px $unit; // 32px height
     text-decoration: none;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -36,7 +36,7 @@
 }
 
 .ds-pill-active {
-    padding: 5px ($unit / 2) 4px $unit;
+    padding: 5px ($unit / 2) 5px $unit;
 
     .ds-filter & {
         background: $color-corporate-green;
