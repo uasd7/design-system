@@ -26,7 +26,7 @@ ul {
 h1,
 .ds-h1 {
     font: $font-heading-1;
-    margin-bottom: $unit * 6;
+    margin-bottom: $unit * 4;
 }
 
 h1 + .ds-sub-h1 {
@@ -38,13 +38,13 @@ h1 + .ds-sub-h1 {
 h2,
 .ds-h2 {
     font: $font-heading-2;
-    margin-bottom: $unit * 4;
+    margin-bottom: $unit * 3;
 }
 
 h3,
 .ds-h3 {
     font: $font-heading-3;
-    margin-bottom: $unit * 3;
+    margin-bottom: $unit * 2;
 }
 
 h4,
