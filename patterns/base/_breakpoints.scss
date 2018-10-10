@@ -34,7 +34,8 @@
 }
 
 $grid-breakpoints: (
-    xxs: 0,
+    xxxs: 0,
+    xxs: $screen-xxs,
     xs: $screen-xs,
     s: $screen-s,
     m: $screen-m

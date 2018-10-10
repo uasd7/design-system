@@ -15,7 +15,8 @@ $gutter-half-std: $gutter-std / 2; //8
 $gutter-half-big: $gutter-big / 2; //16
 
 /* content container widths */
-$container-xxs-min: $screen-xxs - ($gutter-small * 2); //320-16=304
+$container-xxxs-min: $screen-xxxs - ($gutter-small * 2); //320-16=304
+$container-xxs-min: $screen-xxs;
 $container-xs-min: $screen-xs;
 $container-s-min: $screen-s;
 $container-m-min: $screen-m;
@@ -26,7 +27,7 @@ $container-m-min: $screen-m;
 	margin-left: auto;
 	padding: 0 $gutter-half-small;
 
-	@include media-breakpoint-from(xs) {
+	@include media-breakpoint-from(xxs) {
 		padding: 0 $gutter-half-std;
 		// container is fluid
 		width: 100%;
@@ -60,7 +61,7 @@ $container-m-min: $screen-m;
 	margin-right: -($gutter-half-small);
 	margin-left: -($gutter-half-small);
 
-	@include media-breakpoint-from(xs) {
+	@include media-breakpoint-from(xxs) {
 		margin-right: -($gutter-half-std);
 		margin-left: -($gutter-half-std);
 	}
@@ -106,12 +107,12 @@ $container-m-min: $screen-m;
 	box-sizing: border-box;
 	flex: 0 1 auto; //grow shrink basis
 
-	@include media-breakpoint-to(xs) {
+	@include media-breakpoint-to(xxs) {
 		padding-right: $gutter-half-small;
 		padding-left: $gutter-half-small;
 	}
 
-	@include media-breakpoint-from(xs) {
+	@include media-breakpoint-from(xxs) {
 		padding-right: $gutter-half-std;
 		padding-left: $gutter-half-std;
 	}
