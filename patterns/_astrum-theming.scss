@@ -14,6 +14,12 @@
     padding: 20px 0;
 }
 
+.ndpl-page {
+    width: 100%;
+    max-width: 100%;
+}
+
+.ndpl-page,
 .ndpl-group__description,
 .ndpl-component__description {
     p {
@@ -21,14 +27,14 @@
     }
 
     code {
-        color: $color-grey-dark;
+        border: 1px solid $color-grey-medium;
+        color: $color-black;
         font-size: 14px;
     }
 
     pre {
         code {
             background: $color-sand;
-            border: 1px solid $color-grey-medium;
             padding: $unit;
         }
     }
@@ -40,57 +46,21 @@
     }
 }
 
-/* Colours enhancements
+/* Breakpoints enhancements
 ----------------------------------- */
 
-.ndpl-component__color-container {
-    width: 100%;
-    margin: 0;
-}
-
-.cds-color-wrapper {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: $unit * 3;
-
-    @extend .ds-col-xs-12;
-    @extend .ds-col-s-6;
-    @extend .ds-col-m-4;
-}
-
-#group-colors {
-    .ds-grid:first-child {
-        .cds-color-wrapper {
-            @extend .ds-col-m-6;
-        }
-    }
-
+#group-breakpoints {
     .ndpl-component__sample {
         code {
-            display: block;
-            font-size: $fontsize-text-copy;
+            border: 1px solid $color-grey-medium;
+            border-radius: 3px;
+            color: $color-black;
+            display: inline-block;
+            font-size: 14px;
             margin-bottom: $unit;
-        }
-
-        small {
-            color: $color-grey-dark;
-
-            code {
-                display: inline-block;
-                font-size: $fontsize-text-small;
-            }
+            padding: $unit;
         }
     }
-}
-
-.ndpl-component__color {
-    @include media-breakpoint-to(m) {
-        padding: ($unit * 6) 0;
-    }
-}
-
-.ndpl-component__color:first-of-type {
-    margin-bottom: $unit;
 }
 
 /* Grid enhancements
@@ -146,6 +116,64 @@
     overflow: hidden;
     position: relative;
     text-align: center;
+}
+
+
+/* Colours enhancements
+----------------------------------- */
+
+.ndpl-component__color-container {
+    width: 100%;
+    margin: 0;
+}
+
+.cds-color-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: $unit * 3;
+
+    @extend .ds-col-xs-12;
+    @extend .ds-col-s-6;
+    @extend .ds-col-m-4;
+}
+
+#group-colors {
+    .ds-grid:first-child {
+        .cds-color-wrapper {
+            @extend .ds-col-m-6;
+        }
+    }
+
+    .ndpl-component__sample {
+        code {
+            border: 1px solid $color-grey-medium;
+            border-radius: 3px;
+            color: $color-black;
+            display: inline-block;
+            font-size: 14px;
+            margin-bottom: $unit;
+            padding: $unit;
+        }
+
+        small {
+            color: $color-grey-dark;
+
+            code {
+                display: inline-block;
+                font-size: $fontsize-text-small;
+            }
+        }
+    }
+}
+
+.ndpl-component__color {
+    @include media-breakpoint-to(m) {
+        padding: ($unit * 6) 0;
+    }
+}
+
+.ndpl-component__color:first-of-type {
+    margin-bottom: $unit;
 }
 
 /* Typography enhancements
@@ -241,4 +269,5 @@
         }
     }
 }
+
 /* stylelint-enable */

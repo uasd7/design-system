@@ -6,9 +6,9 @@
 
 // base vars
 @import "base/vars";
-// breakpoints using base vars
+// mediaqueries using base vars
 @import "base/breakpoints";
-// grid using breakpoints
+// grid using mediaqueries
 @import "base/flexbox-grid";
 // typography's settings using base vars
 @import "base/typography";

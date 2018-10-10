@@ -58,6 +58,17 @@
     },
     "groups": [
         {
+            "name": "breakpoints",
+            "title": "Breakpoints",
+            "components": [
+                {
+                    "group": "breakpoints",
+                    "name": "mediaqueries",
+                    "title": "MediaQueries"
+                }
+            ]
+        },
+        {
             "name": "grid",
             "title": "Grid",
             "components": [
