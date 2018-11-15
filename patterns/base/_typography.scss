@@ -15,8 +15,6 @@ h3,
 .ds-h3,
 h4,
 .ds-h4,
-h5,
-.ds-h5,
 p,
 ul {
     margin-bottom: $unit * 2;
@@ -38,7 +36,7 @@ h1 + .ds-sub-h1 {
 h2,
 .ds-h2 {
     font: $font-heading-2;
-    margin-bottom: $unit * 3;
+    margin-bottom: $unit * 4;
 }
 
 h3,
@@ -56,6 +54,7 @@ h4,
 h5,
 .ds-h5 {
     font: $font-heading-5;
+    margin: 0;
 }
 
 p {

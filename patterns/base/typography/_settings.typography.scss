@@ -9,7 +9,7 @@ $fontsize-heading-1: 32px !default;
 $fontsize-heading-2: 24px !default;
 $fontsize-heading-3: 20px !default;
 $fontsize-heading-4: 16px !default;
-$fontsize-heading-5: 12px !default;
+$fontsize-heading-5: 14px !default;
 
 $fontsize-text-copy: 16px !default;
 $fontsize-text-small: 12px !default;
@@ -23,7 +23,7 @@ $lineheight-heading-1: $fontsize-heading-1 + $unit !default;
 $lineheight-heading-2: $fontsize-heading-2 + $unit !default;
 $lineheight-heading-3: $fontsize-heading-3 + ($unit / 2) !default;
 $lineheight-heading-4: $fontsize-heading-4 + $unit !default;
-$lineheight-heading-5: $fontsize-heading-5 + ($unit / 2) !default;
+$lineheight-heading-5: 20px !default;
 
 $lineheight-text-copy: $fontsize-text-copy + $unit !default;
 $lineheight-text-small: $fontsize-text-small + ($unit / 2) !default;
