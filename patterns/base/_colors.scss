@@ -1,0 +1,59 @@
+/* NOTE:
+** It is not recommended to name the color variable after a specific usage.
+** Like $color-text--corporate-green: doesn't fit, because it's not only used for text.
+** Just name it $color-corporate-green instead so that you know what it does but the usage is not implicated.
+*/
+
+/* primary green
+----------------------------------- */
+
+$color-corporate-green:         #618f30; // 3.83 Ratio (AA) to #fff
+$color-corporate-green-dark:    #537a29; // 5.01 Ratio (AA) to #fff
+
+/* monochrome colours
+----------------------------------- */
+
+$color-black:                   #403b3b; // 11.01 Ratio (AAA) to #fff
+$color-grey-dark:               #9d9d9d; // 2.71 fails to #fff
+$color-grey-medium:             #bbb9b9; // 1.95 fails to #fff
+$color-grey-light:              #d8d8d8; // for borders
+$color-sand:                    #f6f5f2; // body background
+$color-white:                   #fff;
+
+/* other colours
+----------------------------------- */
+
+$color-red:             #ff665e; // 2.87 fails to #fff
+$color-red-dark:        #a9423c;
+$color-yellow:          #ebc315; // 1.7 fails to #fff
+$color-yellow-dark:     #dbb007;
+$color-blue:            #007c8c; // 4.92 Ratio (AA) to #fff
+$color-blue-dark:       #006a78;
+
+$color-purple:          #bf538d; // 4.34 Ratio (AA) to #fff
+
+/* specified usages
+----------------------------------- */
+
+$color-text:            $color_black;
+$color-text-inverted:   $color-white;
+$color-border:          $color-grey-light;
+$color-bg:              $color-sand;
+$color-bg-content:      $color-white;
+
+/* BACKUP
+** old color vars (using new ones)
+----------------------------------- */
+
+$color-text--corporate-green:   $color-corporate-green-dark;
+
+$color-text--black:             $color-black;
+$color-text--grey:              $color-grey-dark;
+$color-icon--grey:              $color-grey-medium;
+$color-border--grey:            $color-grey-light;
+$color-background--sand:        $color-sand;
+
+$color-action--purple:          $color-purple;
+$color-info--blue:              $color-blue;
+$color-info--yellow:            $color-yellow;
+$color-info--red:               $color-red;

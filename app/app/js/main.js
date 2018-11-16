@@ -591,7 +591,7 @@ new Vue({
                     _this.$set('groups[' + i + '].components[' + j + '].options.sample_dark_background', group.components[j].options.sample_dark_background ? group.components[j].options.sample_dark_background : false);
                     _this.$set('groups[' + i + '].components[' + j + '].options.disable_code_sample', group.components[j].options.disable_code_sample ? group.components[j].options.disable_code_sample : false);
                     _this.$set('groups[' + i + '].components[' + j + '].code_show', false);
-                    _this.$set('groups[' + i + '].components[' + j + '].type', group.components[j].type ? group.components[j].type : 'standard');
+                    _this.$set('groups[' + i + '].components[' + j + '].type', group.components[j].type ? group.components[j].type : 'tags');
                     _this.$set('groups[' + i + '].components[' + j + '].width', group.components[j].width ? group.components[j].width : 'full');
 
                     // Add html and description properties to the component object.

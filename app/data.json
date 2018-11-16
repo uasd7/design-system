@@ -8,7 +8,7 @@
     "client_url": "http://www.chefkoch.de",
     "creators": [
         {
-            "name": "Team Geist",
+            "name": "Team Geist & Team Funkytown Avengers",
             "url": "http://www.chefkoch.de"
         }
     ],
@@ -58,13 +58,24 @@
     },
     "groups": [
         {
-            "name": "typography",
-            "title": "Typographie",
+            "name": "breakpoints",
+            "title": "Breakpoints",
             "components": [
                 {
-                    "group": "typography",
-                    "name": "headings",
-                    "title": "Headings"
+                    "group": "breakpoints",
+                    "name": "mediaqueries",
+                    "title": "MediaQueries"
+                }
+            ]
+        },
+        {
+            "name": "grid",
+            "title": "Grid",
+            "components": [
+                {
+                    "group": "grid",
+                    "name": "grid",
+                    "title": "Grid"
                 }
             ]
         },
@@ -83,18 +94,85 @@
             ]
         },
         {
+            "name": "typography",
+            "title": "Typographie",
+            "components": [
+                {
+                    "group": "typography",
+                    "name": "headings",
+                    "title": "Headings"
+                },
+                {
+                    "group": "typography",
+                    "name": "sub-headings",
+                    "title": "Sub Headings"
+                },
+                {
+                    "group": "typography",
+                    "name": "copy-text",
+                    "title": "Copy Text"
+                },
+                {
+                    "group": "typography",
+                    "name": "small-text",
+                    "title": "Small Text"
+                }
+            ]
+        },
+        {
+            "name": "links",
+            "title": "Links",
+            "components": [
+                {
+                    "group": "links",
+                    "name": "copy",
+                    "title": "Copy Links"
+                },
+                {
+                    "group": "links",
+                    "name": "headline",
+                    "title": "Headline Links"
+                }
+            ]
+        },
+        {
             "name": "buttons",
             "title": "Buttons",
             "components": [
                 {
                     "group": "buttons",
                     "name": "standard",
-                    "title": "Standard-Button"
+                    "title": "Standard Button"
+                },
+                {
+                    "group": "buttons",
+                    "name": "big",
+                    "title": "Big Button"
+                },
+                {
+                    "group": "buttons",
+                    "name": "wide",
+                    "title": "Wide Button"
                 },
                 {
                     "group": "buttons",
                     "name": "variations",
-                    "title": "Variationen"
+                    "title": "Button Variationen"
+                },
+                {
+                    "group": "buttons",
+                    "name": "deactivated",
+                    "title": "Inaktiv / Deaktiviert"
+                },
+                {
+                    "group": "buttons",
+                    "name": "light",
+                    "title": "Light Button"
+                },
+                {
+                    "group": "buttons",
+                    "name": "text",
+                    "title": "Text Button"
                 }
             ]
         },
@@ -104,8 +182,13 @@
             "components": [
                 {
                     "group": "pills",
-                    "name": "standard",
-                    "title": "Standard-Pill"
+                    "name": "tags",
+                    "title": "Tags Pill"
+                },
+                {
+                    "group": "pills",
+                    "name": "filter",
+                    "title": "Filter Pill"
                 }
             ]
         },

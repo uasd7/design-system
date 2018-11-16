@@ -3,23 +3,10 @@
  * Stylelint disalbed for lacking of the "ds-" namespace
  */
 
-/* stylelint-disable selector-class-pattern  */
+/* stylelint-disable  */
 
 .ndpl-sidebar__logo {
     max-width: 100%;
-}
-
-.cds-color-wrapper {
-    display: flex;
-    margin-bottom: 3%;
-
-    &:last-child {
-        margin-bottom: 0;
-    }
-
-    h3 {
-        margin-top: 0;
-    }
 }
 
 .note-container-example {
@@ -27,14 +14,260 @@
     padding: 20px 0;
 }
 
-
-.ndpl-component__description {
-    p { font-size: 16px; }
+.ndpl-page {
+    width: 100%;
+    max-width: 100%;
 }
 
-@media only screen and (max-width: 60em) {
-    .ndpl-component__color-container {
-        margin-right: 3%;
-        width: 17.5%;
+.ndpl-page,
+.ndpl-group__description,
+.ndpl-component__description {
+    p {
+        font-size: $fontsize-text-copy;
+    }
+
+    code {
+        border: 1px solid $color-grey-medium;
+        color: $color-black;
+        font-size: 14px;
+    }
+
+    pre {
+        code {
+            background: $color-sand;
+            padding: $unit;
+        }
     }
 }
+
+.ndpl-page {
+    small {
+        display: inline-block;
+    }
+}
+
+/* Breakpoints enhancements
+----------------------------------- */
+
+#group-breakpoints {
+    .ndpl-component__sample {
+        code {
+            border: 1px solid $color-grey-medium;
+            border-radius: 3px;
+            color: $color-black;
+            display: inline-block;
+            font-size: 14px;
+            margin-bottom: $unit;
+            padding: $unit;
+        }
+    }
+}
+
+/* Grid enhancements
+----------------------------------- */
+
+#group-grid {
+    .ndpl-component__sample {
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+
+        .ds-container {
+            background: #eee;
+            padding-top: $unit;
+
+            // for presentation purposes only
+            &.ds-grid-xxs {
+                @include media-breakpoint-to(m) {
+                    padding: 0 $gutter-half-small;
+                    padding-top: $unit;
+
+                    [class*="col-xs"] {
+                        padding-right: $gutter-half-small;
+                        padding-left: $gutter-half-small;
+                    }
+                }
+            }
+
+            &.ds-grid-xs {
+                @include media-breakpoint-between(xs,m) {
+                    padding: 0 $gutter-half-std;
+                    padding-top: $unit;
+
+                    [class*="col-xs"] {
+                        padding-right: $gutter-half-std;
+                        padding-left: $gutter-half-std;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.ds-box-row {
+    background: $color-corporate-green;
+    border: 1px solid $color-corporate-green;
+    box-sizing: border-box;
+    color: $color-white;
+    font-size: 10px;
+    height: $unit * 2;
+    letter-spacing: 0.5px;
+    margin-bottom: $unit;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+
+
+/* Colours enhancements
+----------------------------------- */
+
+.ndpl-component__color-container {
+    width: 100%;
+    margin: 0;
+}
+
+.cds-color-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: $unit * 3;
+
+    @extend .ds-col-xs-12;
+    @extend .ds-col-s-6;
+    @extend .ds-col-m-4;
+}
+
+#group-colors {
+    .ds-grid:first-child {
+        .cds-color-wrapper {
+            @extend .ds-col-m-6;
+        }
+    }
+
+    .ndpl-component__sample {
+        code {
+            border: 1px solid $color-grey-medium;
+            border-radius: 3px;
+            color: $color-black;
+            display: inline-block;
+            font-size: 14px;
+            margin-bottom: $unit;
+            padding: $unit;
+        }
+
+        small {
+            color: $color-grey-dark;
+
+            code {
+                display: inline-block;
+                font-size: $fontsize-text-small;
+            }
+        }
+    }
+}
+
+.ndpl-component__color {
+    @include media-breakpoint-to(m) {
+        padding: ($unit * 6) 0;
+    }
+}
+
+.ndpl-component__color:first-of-type {
+    margin-bottom: $unit;
+}
+
+/* Typography enhancements
+----------------------------------- */
+
+#group-typography,
+#group-links,
+#group-buttons {
+    .ndpl-component__container {
+        background: #fff;
+        position: relative;
+
+        &:before {
+            color: #888;
+            display: block;
+            font-size: 12px;
+            position: absolute;
+            top: 5px;
+            right: 6px;
+        }
+    }
+
+    div[class*="component__sample"] {
+        background: transparent;
+        z-index: 1;
+    }
+}
+
+#group-links {
+    .ndpl-component__container {
+        &:before {
+            content: 'Hover over the Links to see them in action.';
+        }
+    }
+}
+
+#group-typography {
+    .ndpl-component__container {
+        &:before {
+            content: 'Hover over this container to see the Baseline Grid.';
+            transition: opacity 0.3s ease;
+        }
+
+        &:hover {
+            &:before {
+                opacity: 0;
+            }
+        }
+    }
+
+    div[class*="component__sample"] {
+        &:before {
+            content: '';
+            display: block;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        h1, h2, h3, h4, h5, p, small {
+            background-color: transparent;
+            transition: background-color 0.3s ease 0.15s;
+        }
+
+        &:hover {
+            &:before {
+                background: url("../app/images/baseline-grid-16px.png") repeat 36px 36px;
+                height: 100%;
+                opacity: 1;
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                z-index: -1;
+            }
+
+            h1, h2, h3, h4, h5, p, small {
+                background-color: rgba($color-corporate-green, 0.15);
+            }
+        }
+    }
+}
+
+/* Button enhancements
+----------------------------------- */
+
+#group-buttons {
+    .ndpl-component__container {
+        background: #fff;
+        position: relative;
+
+        &:before {
+            content: 'Hover over or click the Buttons to see hover and focus states.';
+        }
+    }
+}
+
+/* stylelint-enable */

@@ -17,12 +17,42 @@ includePath für das Design-System gesetzt sein:
         includePaths: ['node_modules/chefkoch-design-system/patterns/']
     }) 
 
-## 3. Einbindung und Nutzung der Patterns
-Ein Pattern aus dem Design-System muss erst per scss eingebunden werden:
+## 3. Einbindung und Nutzung
+    
+__Base__  
 
-    @import 'button/button'
+Die grundlegenden DSY Basics bekommst du über 
 
-und kann dann im Markup als Klasse verwendet werden:
+    @import "~chefkoch-design-system/patterns/dsy-base";
+    
+Darin enthalten sind folgende Mindestbestandteile des DSY:  
 
-    <button class="ds-button ds-button--standard">Button-Element als Button</button>
+Variables <small>@import "~chefkoch-design-system/patterns/base/vars";</small>  
+Breakpoints
+  <small>@import "~chefkoch-design-system/patterns/base/breakpoints";</small>  
+Grid <small>@import "~chefkoch-design-system/patterns/base/flexbox-grid";</small>  
+Typography <small>@import "~chefkoch-design-system/patterns/base/typography";</small>  
+Colors <small>@import "~chefkoch-design-system/patterns/base/colors";</small>
 
+__Patterns__  
+
+Einzelne Patterns werden nach gleichem Prinzip ins Projekt geholt.
+
+    @import "~chefkoch-design-system/patterns/button";
+    @import "~chefkoch-design-system/patterns/stars";
+
+Wie du das entsprechende Styling eines Patterns verwendest, erfährst du in den einzelnen Abschnitten der Komponenten.
+
+__Utilities__ 
+
+Das DSY bietet auch standard Utilities an.
+Alle Utilities bekommst du über
+
+    @import "~chefkoch-design-system/patterns/dsy-utilities";
+
+Darin enthalten sind folgende Bestandteile:  
+
+Clearfix <small>@import "~chefkoch-design-system/patterns/utilities/clearfix";</small>  
+Float
+  <small>@import "~chefkoch-design-system/patterns/utilities/float";</small>  
+Screenreader / Hidden text <small>@import "~chefkoch-design-system/patterns/utilities/sr-only";</small> 
