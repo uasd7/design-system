@@ -27,6 +27,7 @@ deploy:
   - provider: npm
     email: ingo.reinhart@chefkoch.de
     api_key: "$NPMJS_TOKEN"
+    skip_cleanup: true
     on:
       tags: true
       repo: chefkoch-dev/design-system
