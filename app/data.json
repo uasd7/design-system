@@ -90,6 +90,11 @@
                     "options": {
                         "disable_code_sample": true
                     }
+                },
+                {
+                    "group": "colors",
+                    "name": "background",
+                    "title": "Background"
                 }
             ]
         },
