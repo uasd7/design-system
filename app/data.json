@@ -193,6 +193,17 @@
             ]
         },
         {
+            "name": "pagination",
+            "title": "Pagination",
+            "components": [
+                {
+                    "group": "pagination",
+                    "name": "pagination",
+                    "title": "Pagination"
+                }
+            ]
+        },
+        {
             "name": "icons",
             "title": "Icons",
             "components": [
