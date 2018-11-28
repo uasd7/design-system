@@ -85,6 +85,27 @@
             ]
         },
         {
+            "name": "margins",
+            "title": "Abstände",
+            "components": [
+                {
+                    "group": "margins",
+                    "name": "content",
+                    "title": "Content"
+                },
+                {
+                    "group": "margins",
+                    "name": "context",
+                    "title": "Context"
+                },
+                {
+                    "group": "margins",
+                    "name": "footer",
+                    "title": "Footer"
+                }
+            ]
+        },
+        {
             "name": "colors",
             "title": "Farben",
             "components": [
