@@ -65,6 +65,11 @@
                     "group": "breakpoints",
                     "name": "mediaqueries",
                     "title": "MediaQueries"
+                },
+                {
+                    "group": "breakpoints",
+                    "name": "viewports",
+                    "title": "Viewports"
                 }
             ]
         },
