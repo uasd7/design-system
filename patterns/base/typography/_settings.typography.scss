@@ -12,8 +12,7 @@ $fontsize-heading-4: 16px !default;
 $fontsize-heading-5: 14px !default;
 
 $fontsize-text-copy: 16px !default;
-$fontsize-text-small: 12px !default;
-$fontsize-text-copy--small: $fontsize-text-small; //obsolete
+$fontsize-text-small: 14px !default;
 $fontsize-text-marginalia: 10px !default;
 
 $fontsize-button--bigboss: 18px !default;
@@ -26,7 +25,7 @@ $lineheight-heading-4: $fontsize-heading-4 + $unit !default;
 $lineheight-heading-5: 20px !default;
 
 $lineheight-text-copy: $fontsize-text-copy + $unit !default;
-$lineheight-text-small: $fontsize-text-small + ($unit / 2) !default;
+$lineheight-text-small: 20px !default;
 $lineheight-text-marginalia: 1.5 !default;
 
 $fontweight-thin: 100;

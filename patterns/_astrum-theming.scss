@@ -264,7 +264,7 @@
             }
 
             h1, h2, h3, h4, h5, p, small {
-                background-color: rgba($color-corporate-green, 0.15);
+                background-color: rgba($color-grey-light, 0.5);
             }
         }
     }
@@ -296,6 +296,39 @@ td {
 }
 
 
+/* Magic Margins
+----------------------------------- */
+
+#group-margins,
+#group-typography {
+    .margin-helper {
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .margin-helper {
+        height: $unit * 4;
+    }
+
+    .margin-helper-2 {
+        height: $unit * 2;
+    }
+    .ndpl-component__container {
+        &:before {
+            content: 'Hover over this container to see the margin.';
+        }
+
+        &:hover {
+            .margin-helper,
+            .margin-helper-2 {
+                background-image: linear-gradient(135deg, rgba(255, 165, 0, 0.1) 25%, rgba(255, 165, 0, 0.3) 25%, rgba(255, 165, 0, 0.3) 50%, rgba(255, 165, 0, 0.1) 50%, rgba(255, 165, 0, 0.1) 75%, rgba(255, 165, 0, 0.3) 75%, rgba(255, 165, 0, 0.3) 100%);
+                background-size: 22.63px 22.63px;
+                opacity: 1;
+            }
+        }
+    }
+}
+
 #group-margins {
     hr {
         border: 0;
@@ -309,22 +342,10 @@ td {
         position: relative;
     }
 
-    .margin-helper,
-    .padding-helper {
-        opacity: 0;
-        transition: opacity 0.3s ease;
-    }
-
-    .margin-helper {
-        height: $unit * 4;
-    }
-
-    .margin-helper-2 {
-        height: $unit * 2;
-    }
-
     .padding-helper {
         height: 100%;
+        opacity: 0;
+        transition: opacity 0.3s ease;
     }
 
     .content-helper {
@@ -338,23 +359,11 @@ td {
     }
 
     .ndpl-component__container {
-        &:before {
-            content: 'Hover over this container to see the margin.';
-        }
-
         &:hover {
-            .margin-helper,
-            .padding-helper {
-                background-size: 22.63px 22.63px;
-                opacity: 1;
-            }
-
-            .margin-helper {
-                background-image: linear-gradient(135deg, rgba(255, 165, 0, 0.1) 25%, rgba(255, 165, 0, 0.3) 25%, rgba(255, 165, 0, 0.3) 50%, rgba(255, 165, 0, 0.1) 50%, rgba(255, 165, 0, 0.1) 75%, rgba(255, 165, 0, 0.3) 75%, rgba(255, 165, 0, 0.3) 100%);
-            }
-
             .padding-helper {
                 background-image: linear-gradient(135deg, rgba(97, 143, 48, 0.1) 25%, rgba(97, 143, 48, 0.3) 25%, rgba(97, 143, 48, 0.3) 50%, rgba(97, 143, 48, 0.1) 50%, rgba(97, 143, 48, 0.1) 75%, rgba(97, 143, 48, 0.3) 75%, rgba(97, 143, 48, 0.3) 100%);
+                background-size: 22.63px 22.63px;
+                opacity: 1;
             }
         }
     }
@@ -374,4 +383,15 @@ td {
         }
     }
 }
+
+#group-typography {
+    .margin-helper {
+        margin-top: -($unit * 4);
+    }
+
+    .margin-helper-2 {
+        margin-top: -($unit * 2);
+    }
+}
+
 /* stylelint-enable */
