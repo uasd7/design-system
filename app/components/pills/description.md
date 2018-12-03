@@ -9,4 +9,8 @@ H 32px / M 8
 
 __Usage__  
     
-    @import "~chefkoch-design-system/patterns/pill";
+    Via Shortlink
+    @import "~chefkoch-design-system/components/pills";
+    
+    Original Location
+    @import "~chefkoch-design-system/app/components/pills/pills";

@@ -15,7 +15,7 @@ var development = false;
 
 // Load config
 var config  = {
-    'patternsSrcDir' : './patterns/chefkoch-design-system.scss',
+    'patternsSrcDir' : './config/chefkoch-design-system.scss',
     'appRootDir':  './app',
     'destFolder' : './app/build',
     'autoprefixerOptions' : {
@@ -62,7 +62,7 @@ gulp.task('lint-css', function lintCssTask() {
     const gulpStylelint = require('gulp-stylelint');
 
     return gulp
-        .src('patterns/**/*.scss')
+        .src(['components/**/*.scss', 'app/components/**/*.scss'])
         .pipe(gulpStylelint({
             reporters: [
                 {formatter: 'string', console: true}
@@ -81,8 +81,8 @@ gulp.task('serve', function() {
         }
     });
 
-    gulp.watch("patterns/**/*.scss", gulp.parallel('compile-scss', 'lint-css'));
-    gulp.watch("app/{components,pages}/**/*").on('change', browserSync.reload);
+    gulp.watch(['components/**/*.scss', 'app/components/**/*.scss'], gulp.parallel('compile-scss', 'lint-css'));
+    gulp.watch('app/{components,pages}/**/*').on('change', browserSync.reload);
 });
 
 /**
