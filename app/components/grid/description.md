@@ -8,7 +8,11 @@ Hilfe für das Baseline Grid gibt [Grid Lover](https://www.gridlover.net/try).
 
 __Usage__  
     
-    @import "~chefkoch-design-system/patterns/base/flexbox-grid";
-      
+    Via Shortlink
+    @import "~chefkoch-design-system/components/flexbox-grid";
+    
     Enthalten in  
-    @import "~chefkoch-design-system/patterns/dsy-base";
+    @import "~chefkoch-design-system/components/dsy-base";
+      
+    Original Location
+    @import "~chefkoch-design-system/app/components/grid/flexbox-grid";

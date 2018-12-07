@@ -50,6 +50,11 @@
                 "file": "./pages/usage.md"
             },
             {
+                "name": "contribution",
+                "title": "Entwicklung",
+                "file": "./pages/contribution.md"
+            },
+            {
                 "name": "accessibility-matrix",
                 "title": "Barrierefreie Farben",
                 "file": "./pages/accessibility-matrix.md"
@@ -220,11 +225,11 @@
             ]
         },
         {
-            "name": "rating",
-            "title": "Rating",
+            "name": "stars",
+            "title": "Stars",
             "components": [
                 {
-                    "group": "rating",
+                    "group": "stars",
                     "name": "stars",
                     "title": "Sterne"
                 }
@@ -257,11 +262,11 @@
             ]
         },
         {
-            "name": "utilites",
+            "name": "utilities",
             "title": "Utilities",
             "components": [
                 {
-                    "group": "utilites",
+                    "group": "utilities",
                     "name": "spacing",
                     "title": "Spacing",
                     "options": {
@@ -271,5 +276,5 @@
             ]
         }
     ],
-    "version": "1.9.3"
+    "version": "1.9.5"
 }

@@ -1,4 +1,4 @@
-@import "base/colors";
+@import "../colors/colors";
 
 .ds-rating {
 
@@ -22,7 +22,7 @@
         background-repeat: repeat-x;
         background-size: $star-size;
 
-        // Pseudo element for the filled rating stars
+        // Pseudo element for the filled stars stars
 
         &::after {
             content: "";
