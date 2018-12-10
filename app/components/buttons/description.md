@@ -19,4 +19,8 @@ __Styles__
 
 __Usage__  
     
-    @import "~chefkoch-design-system/patterns/button";
+    Via Shortlink
+    @import "~chefkoch-design-system/components/buttons";
+    
+    Original Location
+    @import "~chefkoch-design-system/app/components/buttons/buttons";

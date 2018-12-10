@@ -5,13 +5,13 @@
 */
 
 // base vars
-@import "base/vars";
+@import "vars";
 // mediaqueries using base vars
-@import "base/breakpoints";
+@import "../app/components/breakpoints/breakpoints";
 // grid using mediaqueries
-@import "base/flexbox-grid";
+@import "../app/components/grid/flexbox-grid";
 // typography's settings using base vars
-@import "base/typography";
+@import "../app/components/typography/typography";
 
-@import "base/colors";
-@import "base/link";
+@import "../app/components/colors/colors";
+@import "../app/components/links/links";
