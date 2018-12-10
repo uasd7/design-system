@@ -130,6 +130,17 @@
             ]
         },
         {
+            "name": "shadows",
+            "title": "Shadows",
+            "components": [
+                {
+                    "group": "shadows",
+                    "name": "shadows",
+                    "title": "Shadows"
+                }
+            ]
+        },
+        {
             "name": "typography",
             "title": "Typographie",
             "components": [
