@@ -19,7 +19,7 @@
     "stylelint": "^9.3.0"
   },
   "files": [
-    "components"
+    "components", "app/components"
   ],
   "scripts": {
     "astrum": "astrum",
