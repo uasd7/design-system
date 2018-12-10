@@ -5,7 +5,11 @@ In Ausnahmefällen darf im CSS eine halbe unit (4) verwendet werden. (Bspw. bei 
 
 __Usage__  
     
-    @import "~chefkoch-design-system/patterns/base/typography";
-      
+    Via Shortlink
+    @import "~chefkoch-design-system/components/typography";
+    
     Enthalten in  
-    @import "~chefkoch-design-system/patterns/dsy-base";
+    @import "~chefkoch-design-system/components/dsy-base";
+      
+    Original Location
+    @import "~chefkoch-design-system/app/components/typography/typography";

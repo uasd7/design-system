@@ -5,7 +5,11 @@ __NOTE:__ Es ist nicht empfehlenswert, die Variablen der Farben nach einem spezi
 
 __Usage__  
     
-    @import "~chefkoch-design-system/patterns/base/colors";
-      
+    Via Shortlink
+    @import "~chefkoch-design-system/components/colors";
+    
     Enthalten in  
-    @import "~chefkoch-design-system/patterns/dsy-base";
+    @import "~chefkoch-design-system/components/dsy-base";
+      
+    Original Location
+    @import "~chefkoch-design-system/app/components/colors/colors";

@@ -1,3 +1,7 @@
 __Usage__  
     
-    @import "~chefkoch-design-system/patterns/link";
+    Via Shortlink
+    @import "~chefkoch-design-system/components/links";
+    
+    Original Location
+    @import "~chefkoch-design-system/app/components/links/links";
