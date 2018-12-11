@@ -19,10 +19,16 @@
     max-width: 100%;
 }
 
+p,
+li {
+    font: $font-text-copy;
+}
+
 .ndpl-page,
 .ndpl-group__description,
 .ndpl-component__description {
-    p {
+    p,
+    li {
         font-size: $fontsize-text-copy;
     }
 
