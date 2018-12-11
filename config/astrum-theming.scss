@@ -19,10 +19,16 @@
     max-width: 100%;
 }
 
+p,
+li {
+    font: $font-text-copy;
+}
+
 .ndpl-page,
 .ndpl-group__description,
 .ndpl-component__description {
-    p {
+    p,
+    li {
         font-size: $fontsize-text-copy;
     }
 
@@ -176,12 +182,13 @@
     margin-bottom: $unit;
 }
 
-/* Typography enhancements
+/* Container hints
 ----------------------------------- */
 
 #group-typography,
 #group-links,
-#group-buttons {
+#group-buttons,
+#group-margins {
     .ndpl-component__container {
         background: #fff;
         position: relative;
@@ -202,6 +209,26 @@
     }
 }
 
+#group-typography,
+#group-links,
+#group-margins {
+    .ndpl-component__container {
+        &:before {
+            transition: opacity 0.3s ease;
+            opacity: 1;
+        }
+
+        &:hover {
+            &:before {
+                opacity: 0;
+            }
+        }
+    }
+}
+
+/* Typography enhancements
+----------------------------------- */
+
 #group-links {
     .ndpl-component__container {
         &:before {
@@ -214,13 +241,6 @@
     .ndpl-component__container {
         &:before {
             content: 'Hover over this container to see the Baseline Grid.';
-            transition: opacity 0.3s ease;
-        }
-
-        &:hover {
-            &:before {
-                opacity: 0;
-            }
         }
     }
 
@@ -250,7 +270,7 @@
             }
 
             h1, h2, h3, h4, h5, p, small {
-                background-color: rgba($color-corporate-green, 0.15);
+                background-color: rgba($color-grey-light, 0.5);
             }
         }
     }
@@ -261,12 +281,122 @@
 
 #group-buttons {
     .ndpl-component__container {
-        background: #fff;
-        position: relative;
-
         &:before {
             content: 'Hover over or click the Buttons to see hover and focus states.';
         }
+    }
+}
+
+
+/* Tables
+----------------------------------- */
+
+td,
+th {
+    text-align: left;
+    padding: $unit / 2;
+}
+
+td {
+    border-top: 1px solid $color-grey-light;
+}
+
+
+/* Magic Margins
+----------------------------------- */
+
+#group-margins,
+#group-typography {
+    .margin-helper {
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .margin-helper {
+        height: $unit * 4;
+    }
+
+    .margin-helper-2 {
+        height: $unit * 2;
+    }
+    .ndpl-component__container {
+        &:before {
+            content: 'Hover over this container to see the margin.';
+        }
+
+        &:hover {
+            .margin-helper,
+            .margin-helper-2 {
+                background-image: linear-gradient(135deg, rgba(255, 165, 0, 0.1) 25%, rgba(255, 165, 0, 0.3) 25%, rgba(255, 165, 0, 0.3) 50%, rgba(255, 165, 0, 0.1) 50%, rgba(255, 165, 0, 0.1) 75%, rgba(255, 165, 0, 0.3) 75%, rgba(255, 165, 0, 0.3) 100%);
+                background-size: 22.63px 22.63px;
+                opacity: 1;
+            }
+        }
+    }
+}
+
+#group-margins {
+    hr {
+        border: 0;
+        border-top: 1px solid $color-grey-light;
+        margin: 0;
+    }
+
+    .margin-box {
+        border: 1px solid $color-grey-light;
+        height: 160px;
+        position: relative;
+    }
+
+    .padding-helper {
+        height: 100%;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .content-helper {
+        background: $color-white;
+        height: 128px;
+        opacity: 1;
+        position: absolute;
+        left: $unit * 2;
+        top: $unit * 2;
+        width: calc(100% - #{$unit * 4});
+    }
+
+    .ndpl-component__container {
+        &:hover {
+            .padding-helper {
+                background-image: linear-gradient(135deg, rgba(97, 143, 48, 0.1) 25%, rgba(97, 143, 48, 0.3) 25%, rgba(97, 143, 48, 0.3) 50%, rgba(97, 143, 48, 0.1) 50%, rgba(97, 143, 48, 0.1) 75%, rgba(97, 143, 48, 0.3) 75%, rgba(97, 143, 48, 0.3) 100%);
+                background-size: 22.63px 22.63px;
+                opacity: 1;
+            }
+        }
+    }
+
+    #group-margins-component-content {
+        .content-helper-1 {
+            left: $unit * 2;
+            top: $unit * 2;
+            width: 33%;
+        }
+
+        .content-helper-2 {
+            margin-left: calc(33% + #{$unit * 4});
+            top: $unit * 2;
+            left: auto;
+            width: calc(66% - 42px);
+        }
+    }
+}
+
+#group-typography {
+    .margin-helper {
+        margin-top: -($unit * 4);
+    }
+
+    .margin-helper-2 {
+        margin-top: -($unit * 2);
     }
 }
 

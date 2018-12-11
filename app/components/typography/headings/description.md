@@ -7,4 +7,5 @@ Optische Auszeichnungen über die utility-Klassen `.ds-h1`, `.ds-h2`,`.ds-h3`,`.
 
 __Styles__  
 Helvetica Neue Bold   
+
 <small>F: Fontsize / L: Line-Height / M: Margin (bottom)</small>

@@ -70,6 +70,11 @@
                     "group": "breakpoints",
                     "name": "mediaqueries",
                     "title": "MediaQueries"
+                },
+                {
+                    "group": "breakpoints",
+                    "name": "viewports",
+                    "title": "Viewports"
                 }
             ]
         },
@@ -85,6 +90,27 @@
             ]
         },
         {
+            "name": "margins",
+            "title": "Abstände",
+            "components": [
+                {
+                    "group": "margins",
+                    "name": "content",
+                    "title": "Content"
+                },
+                {
+                    "group": "margins",
+                    "name": "context",
+                    "title": "Context"
+                },
+                {
+                    "group": "margins",
+                    "name": "footer",
+                    "title": "Footer"
+                }
+            ]
+        },
+        {
             "name": "colors",
             "title": "Farben",
             "components": [
@@ -95,6 +121,27 @@
                     "options": {
                         "disable_code_sample": true
                     }
+                },
+                {
+                    "group": "colors",
+                    "name": "background",
+                    "title": "Background"
+                }
+            ]
+        },
+        {
+            "name": "shadows",
+            "title": "Shadows",
+            "components": [
+                {
+                    "group": "shadows",
+                    "name": "shadows",
+                    "title": "Shadows"
+                },
+                {
+                    "group": "shadows",
+                    "name": "material-shadows",
+                    "title": "Material Shadows"
                 }
             ]
         },
