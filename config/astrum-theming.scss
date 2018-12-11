@@ -1,6 +1,6 @@
 /*
- * Additional Styling for Astrum
- * Stylelint disalbed for lacking of the "ds-" namespace
+ * Additional Styling for Astrum to make it all oh so pretty <3
+ * Stylelint disabled for lacking of the "ds-" namespace
  */
 
 /* stylelint-disable  */
@@ -188,7 +188,8 @@ li {
 #group-typography,
 #group-links,
 #group-buttons,
-#group-margins {
+#group-margins,
+#group-pagination {
     .ndpl-component__container {
         background: #fff;
         position: relative;
@@ -211,7 +212,8 @@ li {
 
 #group-typography,
 #group-links,
-#group-margins {
+#group-margins,
+#group-pagination {
     .ndpl-component__container {
         &:before {
             transition: opacity 0.3s ease;
@@ -306,6 +308,16 @@ td {
 ----------------------------------- */
 
 #group-margins,
+#group-typography,
+#group-pagination {
+    .ndpl-component__container {
+        &:before {
+            content: 'Hover over this container to see the margins.';
+        }
+    }
+}
+
+#group-margins,
 #group-typography {
     .margin-helper {
         opacity: 0;
@@ -319,11 +331,8 @@ td {
     .margin-helper-2 {
         height: $unit * 2;
     }
-    .ndpl-component__container {
-        &:before {
-            content: 'Hover over this container to see the margin.';
-        }
 
+    .ndpl-component__container {
         &:hover {
             .margin-helper,
             .margin-helper-2 {
@@ -335,7 +344,8 @@ td {
     }
 }
 
-#group-margins {
+#group-margins,
+#group-pagination {
     hr {
         border: 0;
         border-top: 1px solid $color-grey-light;
@@ -349,7 +359,6 @@ td {
     }
 
     .padding-helper {
-        height: 100%;
         opacity: 0;
         transition: opacity 0.3s ease;
     }
@@ -397,6 +406,36 @@ td {
 
     .margin-helper-2 {
         margin-top: -($unit * 2);
+    }
+
+    .padding-helper {
+        height: 100%;
+    }
+}
+
+#group-margins {
+    .padding-helper {
+        height: 100%;
+    }
+}
+
+#group-pagination {
+    ul {
+        position: relative;
+    }
+
+    .padding-helper {
+        height: $unit * 4;
+        position: absolute;
+        width: 100%;
+    }
+
+    .padding-helper-1 {
+        top: 0;
+    }
+
+    .padding-helper-2 {
+        bottom: 0;
     }
 }
 

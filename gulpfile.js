@@ -81,7 +81,7 @@ gulp.task('serve', function() {
         }
     });
 
-    gulp.watch(['components/**/*.scss', 'app/components/**/*.scss'], gulp.parallel('compile-scss', 'lint-css'));
+    gulp.watch(['components/**/*.scss', 'app/components/**/*.scss', 'config/**/*.scss'], gulp.parallel('compile-scss', 'lint-css'));
     gulp.watch('app/{components,pages}/**/*').on('change', browserSync.reload);
 });
 

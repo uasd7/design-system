@@ -20,6 +20,8 @@ $screen-m: 960px + 312px + 48px;
 @import "../app/components/buttons/buttons";
 @import "../app/components/icons/icons";
 @import "../app/components/pills/pills";
+@import "../app/components/pagination/pagination";
+
 @import "../app/components/alerts/note";
 @import "../app/components/stars/stars";
 @import "../app/components/tabs/tabs";
