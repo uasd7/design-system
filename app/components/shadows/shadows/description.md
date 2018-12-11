@@ -1,5 +1,4 @@
-Die Basisfarbe für Schatten ist die Farbe Schwarz rgb(0,0,0), deren Itensität über den Alpha Kanal geregelt wird (rgba()).  
-Die Größe des Schattens orientiert sich im Regelfall ebenfalls an der Unit 8.  
+Die Basisfarbe für Schatten ist die Farbe Schwarz rgb(0,0,0), deren Itensität im CSS über den Alpha Kanal geregelt wird (rgba(...)).  
 
 __Code__  
 box-shadow: 0px 0px __8px__ rgba(0, 0, 0, __0.20__)   

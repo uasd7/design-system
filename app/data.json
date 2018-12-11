@@ -137,6 +137,11 @@
                     "group": "shadows",
                     "name": "shadows",
                     "title": "Shadows"
+                },
+                {
+                    "group": "shadows",
+                    "name": "material-shadows",
+                    "title": "Material Shadows"
                 }
             ]
         },
