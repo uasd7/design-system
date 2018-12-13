@@ -1,0 +1,327 @@
+{
+    "project_logo": "logo.svg",
+    "project_favicon": "favicon.png",
+    "project_name": "Chefkoch Design System",
+    "project_url": null,
+    "copyright_start_year": "2017",
+    "client_name": null,
+    "client_url": "http://www.chefkoch.de",
+    "creators": [
+        {
+            "name": "Team Geist & Team Funkytown Avengers",
+            "url": "http://www.chefkoch.de"
+        }
+    ],
+    "theme": {
+        "border_color": "#E0E6ED",
+        "highlight_color": "#F9FAFC",
+        "brand_color": "#618F30",
+        "background_color": "#F6F5F2",
+        "code_highlight_theme": "github",
+        "override_code_highlight_bg": "#F9FAFC",
+        "sample_dark_background": "#333333",
+        "show_project_name": false,
+        "show_version": false,
+        "max_width": null,
+        "titles": {
+            "library_title": "Chefkoch Design System",
+            "pages_title": "Übersicht",
+            "components_title": "Komponenten"
+        }
+    },
+    "assets": {
+        "css": [
+            "./build/chefkoch-design-system.css"
+        ],
+        "js": []
+    },
+    "font_libraries": {
+        "typekit_code": null,
+        "typography_web_fonts": null,
+        "google_web_fonts": null
+    },
+    "content": {
+        "show_first_page_on_load": true,
+        "title": "Overview",
+        "pages": [
+            {
+                "name": "introduction",
+                "title": "Benutzung",
+                "file": "./pages/usage.md"
+            },
+            {
+                "name": "contribution",
+                "title": "Entwicklung",
+                "file": "./pages/contribution.md"
+            },
+            {
+                "name": "accessibility-matrix",
+                "title": "Barrierefreie Farben",
+                "file": "./pages/accessibility-matrix.md"
+            }
+        ]
+    },
+    "groups": [
+        {
+            "name": "breakpoints",
+            "title": "Breakpoints",
+            "components": [
+                {
+                    "group": "breakpoints",
+                    "name": "mediaqueries",
+                    "title": "MediaQueries"
+                },
+                {
+                    "group": "breakpoints",
+                    "name": "viewports",
+                    "title": "Viewports"
+                }
+            ]
+        },
+        {
+            "name": "grid",
+            "title": "Grid",
+            "components": [
+                {
+                    "group": "grid",
+                    "name": "grid",
+                    "title": "Grid"
+                }
+            ]
+        },
+        {
+            "name": "margins",
+            "title": "Abstände",
+            "components": [
+                {
+                    "group": "margins",
+                    "name": "content",
+                    "title": "Content"
+                },
+                {
+                    "group": "margins",
+                    "name": "context",
+                    "title": "Context"
+                },
+                {
+                    "group": "margins",
+                    "name": "footer",
+                    "title": "Footer"
+                }
+            ]
+        },
+        {
+            "name": "colors",
+            "title": "Farben",
+            "components": [
+                {
+                    "group": "colors",
+                    "name": "colors",
+                    "title": "Corporate Farben",
+                    "options": {
+                        "disable_code_sample": true
+                    }
+                },
+                {
+                    "group": "colors",
+                    "name": "background",
+                    "title": "Background"
+                }
+            ]
+        },
+        {
+            "name": "shadows",
+            "title": "Shadows",
+            "components": [
+                {
+                    "group": "shadows",
+                    "name": "shadows",
+                    "title": "Shadows"
+                },
+                {
+                    "group": "shadows",
+                    "name": "material-shadows",
+                    "title": "Material Shadows"
+                }
+            ]
+        },
+        {
+            "name": "typography",
+            "title": "Typographie",
+            "components": [
+                {
+                    "group": "typography",
+                    "name": "headings",
+                    "title": "Headings"
+                },
+                {
+                    "group": "typography",
+                    "name": "sub-headings",
+                    "title": "Sub Headings"
+                },
+                {
+                    "group": "typography",
+                    "name": "copy-text",
+                    "title": "Copy Text"
+                },
+                {
+                    "group": "typography",
+                    "name": "small-text",
+                    "title": "Small Text"
+                }
+            ]
+        },
+        {
+            "name": "links",
+            "title": "Links",
+            "components": [
+                {
+                    "group": "links",
+                    "name": "copy",
+                    "title": "Copy Links"
+                },
+                {
+                    "group": "links",
+                    "name": "headline",
+                    "title": "Headline Links"
+                }
+            ]
+        },
+        {
+            "name": "buttons",
+            "title": "Buttons",
+            "components": [
+                {
+                    "group": "buttons",
+                    "name": "standard",
+                    "title": "Standard Button"
+                },
+                {
+                    "group": "buttons",
+                    "name": "big",
+                    "title": "Big Button"
+                },
+                {
+                    "group": "buttons",
+                    "name": "wide",
+                    "title": "Wide Button"
+                },
+                {
+                    "group": "buttons",
+                    "name": "variations",
+                    "title": "Button Variationen"
+                },
+                {
+                    "group": "buttons",
+                    "name": "deactivated",
+                    "title": "Inaktiv / Deaktiviert"
+                },
+                {
+                    "group": "buttons",
+                    "name": "light",
+                    "title": "Light Button"
+                },
+                {
+                    "group": "buttons",
+                    "name": "text",
+                    "title": "Text Button"
+                }
+            ]
+        },
+        {
+            "name": "pills",
+            "title": "Pills",
+            "components": [
+                {
+                    "group": "pills",
+                    "name": "tags",
+                    "title": "Tags Pill"
+                },
+                {
+                    "group": "pills",
+                    "name": "filter",
+                    "title": "Filter Pill"
+                }
+            ]
+        },
+        {
+            "name": "pagination",
+            "title": "Pagination",
+            "components": [
+                {
+                    "group": "pagination",
+                    "name": "pagination",
+                    "title": "Pagination"
+                }
+            ]
+        },
+        {
+            "name": "icons",
+            "title": "Icons",
+            "components": [
+                {
+                    "group": "icons",
+                    "name": "functional-icons",
+                    "title": "Funktionale Icons"
+                },
+                {
+                    "group": "icons",
+                    "name": "schmuck-icons",
+                    "title": "Schmuck-Icons"
+                }
+            ]
+        },
+        {
+            "name": "stars",
+            "title": "Stars",
+            "components": [
+                {
+                    "group": "stars",
+                    "name": "stars",
+                    "title": "Sterne"
+                }
+            ]
+        },
+        {
+            "name": "alerts",
+            "title": "Feedback",
+            "components": [
+                {
+                    "group": "alerts",
+                    "name": "note",
+                    "title": "Hinweis",
+                    "width": "half"
+                }
+            ]
+        },
+        {
+            "name": "tabs",
+            "title": "Tabs",
+            "components": [
+                {
+                    "group": "tabs",
+                    "name": "tabs",
+                    "title": "Tabs",
+                    "options": {
+                        "sample_dark_background": true
+                    }
+                }
+            ]
+        },
+        {
+            "name": "utilities",
+            "title": "Utilities",
+            "components": [
+                {
+                    "group": "utilities",
+                    "name": "spacing",
+                    "title": "Spacing",
+                    "options": {
+                        "disable_code_sample": true
+                    }
+                }
+            ]
+        }
+    ],
+    "version": "1.9.5"
+}
