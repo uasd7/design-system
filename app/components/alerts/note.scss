@@ -26,6 +26,10 @@
         border-color: $color-info--blue;
     }
 
+    &--success {
+        border-color: $color-info--green;
+    }
+
     &--warning {
         border-color: $color-info--yellow;
     }
