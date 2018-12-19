@@ -7,6 +7,9 @@ body {
     line-height: 1.5; // 24px
 }
 
+/* reset
+----------------------------------- */
+
 h1,
 .ds-h1,
 h2,
@@ -20,6 +23,9 @@ ul {
     margin-bottom: $unit * 2;
     margin-top: 0;
 }
+
+/* headlines
+----------------------------------- */
 
 h1,
 .ds-h1 {
@@ -57,9 +63,15 @@ h5,
     margin: 0;
 }
 
+/* copy-text
+----------------------------------- */
+
 p {
     font: $font-text-copy;
 }
+
+/* typography utilities
+----------------------------------- */
 
 small,
 .ds-text-small {
@@ -78,6 +90,13 @@ small,
 .ds-text-italic {
     font-style: italic;
 }
+
+.ds-text-bold {
+    font-weight: bold;
+}
+
+/* list-utilities
+----------------------------------- */
 
 .ds-list-plain {
     list-style: none;

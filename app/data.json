@@ -314,6 +314,21 @@
             "components": [
                 {
                     "group": "utilities",
+                    "name": "typography-utilities",
+                    "title": "Typography Utilities"
+                },
+                {
+                    "group": "utilities",
+                    "name": "list-utilities",
+                    "title": "List Utilities"
+                },
+                {
+                    "group": "utilities",
+                    "name": "layout-utilities",
+                    "title": "Layout Utilities"
+                },
+                {
+                    "group": "utilities",
                     "name": "spacing",
                     "title": "Spacing",
                     "options": {

@@ -3,6 +3,7 @@ Wird das Design irgendwann mal so abgeändert, dass es nicht mehr wie eine Pille
 
 __Styles__  
 Typografie geerbt von main, bzw aside.  
+Benötigt die ds-utility Klassen `.ds-list-plain` & `.ds-list-cloud` (siehe Utilities/List Utilities).
  
 H 32px / M 8    
 

@@ -1,3 +1,5 @@
+⚠ deprecated
+
 Zum Teil inspiriert von Bootstrap v4.0 mit einem bisschen BEM-Geschmack
 
 See also: [https://getbootstrap.com/docs/4.0/utilities/spacing/]
