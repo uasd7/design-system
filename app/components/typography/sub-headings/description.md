@@ -1,3 +1,5 @@
+⚠ Will be deprecated in future
+
 __Code__  
 Eine Sub-Headline wird __nicht__ als `<h1-6>` deklariert, sondern als `<p>`.  
 
