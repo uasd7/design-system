@@ -1,4 +1,3 @@
-Implementiert sind ein __normales Grid__ (vertikal ↓) und ein __Baseline-Grid__ (horizontal →).
 
 Das Grid und auch die CSS properties (Margins, Paddings, Heights, Font-Sizes, Line-Heights) orientieren sich an einer festgelegten Unit. __[Diese Unit ist 8](https://mysticalnumbers.com/number-8/)__. 
 
