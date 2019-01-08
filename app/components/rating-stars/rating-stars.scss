@@ -10,6 +10,11 @@
     @include media-breakpoint-from(s) {
         margin-bottom: $unit * 2;
     }
+}
+
+.ds-rating-stars {
+    display: flex;
+    margin-left: -2px; // for visual alignment on the left
 
     i {
         color: $color-yellow;
@@ -20,11 +25,12 @@
             width: 18px;
         }
     }
-}
 
-.ds-rating-stars {
-    display: flex;
-    margin-left: -2px; // for visual alignment on the left
+    &.ds-no-rating {
+        i {
+            color: $color-grey-medium;
+        }
+    }
 }
 
 .ds-rating-count {
