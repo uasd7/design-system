@@ -24,15 +24,30 @@
     }
 }
 
-
 .ndpl-page {
     width: 100%;
     max-width: 100%;
 }
 
-p,
-li {
-    font: $font-text-copy;
+.ndpl-library {
+    padding-top: 0;
+}
+
+.ndpl-library__group:not(:first-child) {
+    border-top: 1px solid $color-grey-light;
+    padding-top: 60px;
+}
+
+.ndpl-page, .ndpl-intro, .ndpl-group__description, .ndpl-component__description {
+    font-weight: normal;
+    line-height: 1.5;
+}
+
+.ndpl-component__container {
+    p,
+    li {
+        font: $font-text-copy;
+    }
 }
 
 .ndpl-page,
