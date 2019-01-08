@@ -44,14 +44,7 @@
 }
 
 .ndpl-page, .ndpl-loading__title, .ndpl-error, .ndpl-info, .ndpl-header, .ndpl-sidebar, .ndpl-intro, .ndpl-library__title, .ndpl-group__description, .ndpl-component__title, .ndpl-component__description, .ndpl-component__label, .ndpl-component__code-toggle, .ndpl-component__color, .ndpl-page, .ndpl-nav__title, .ndpl-sidebar__title {
-    font-family: "Helvetica Neue", "HelveticaNeue", "Helvetica", "Arial", sans-serif;
-}
-
-.ndpl-component__container {
-    p,
-    li {
-        font: $font-text-copy;
-    }
+    font-family: $fontfamily-base;
 }
 
 .ndpl-page,
@@ -59,13 +52,13 @@
 .ndpl-component__description {
     p,
     li {
-        font-size: $fontsize-text-copy;
+        font-size: $fontsize-base;
     }
 
     code {
         border: 1px solid $color-grey-medium;
         color: $color-black;
-        font-size: $fontsize-text-small;
+        font-size: $fontsize-small;
     }
 
     pre {
@@ -92,7 +85,7 @@
             border-radius: $unit / 2;
             color: $color-black;
             display: inline-block;
-            font-size: $fontsize-text-small;
+            font-size: $fontsize-small;
             margin-bottom: $unit;
             padding: $unit;
         }
@@ -190,7 +183,7 @@
             border-radius: $unit / 2;
             color: $color-black;
             display: inline-block;
-            font-size: $fontsize-text-small;
+            font-size: $fontsize-small;
             margin-bottom: $unit;
             padding: $unit;
         }
@@ -200,7 +193,7 @@
 
             code {
                 display: inline-block;
-                font-size: $fontsize-text-small;
+                font-size: $fontsize-small;
             }
         }
     }

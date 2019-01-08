@@ -4,7 +4,8 @@
 small,
 .ds-text-small {
     display: block;
-    font: $font-text-small;
+    font-size: $fontsize-small;
+    line-height: $lineheight-small;
 }
 
 .ds-text-center {
