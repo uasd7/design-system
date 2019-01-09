@@ -2,9 +2,7 @@
 @import "tools.typography";
 
 body {
-    font-family: $fontfamily--base;
-    font-size: em($fontsize--base); // 16px
-    line-height: 1.5; // 24px
+    font: $font-base;
 }
 
 /* reset
@@ -29,7 +27,7 @@ ul {
 
 h1,
 .ds-h1 {
-    font: $font-heading-1;
+    font: $font-h1;
     margin-bottom: $unit * 4;
 }
 
@@ -41,31 +39,25 @@ h1 + .ds-sub-h1 {
 
 h2,
 .ds-h2 {
-    font: $font-heading-2;
+    font: $font-h2;
     margin-bottom: $unit * 4;
 }
 
 h3,
 .ds-h3 {
-    font: $font-heading-3;
+    font: $font-h3;
     margin-bottom: $unit * 2;
 }
 
 h4,
 .ds-h4 {
-    font: $font-heading-4;
+    font: $font-h4;
     margin-bottom: $unit * 2;
 }
 
 h5,
 .ds-h5 {
-    font: $font-heading-5;
+    font: $font-h5;
     margin: 0;
 }
 
-/* copy-text
------------------------------------ */
-
-p {
-    font: $font-text-copy;
-}
