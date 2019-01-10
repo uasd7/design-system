@@ -3,6 +3,11 @@
 /* rating stars
 ----------------------------------- */
 
+@mixin small-stars {
+    font-size: 20px;
+    width: 18px;
+}
+
 .ds-rating {
     display: flex;
     margin-bottom: $unit * 1.5;
@@ -21,8 +26,11 @@
         width: 21px;
 
         @include media-breakpoint-to(xs) {
-            font-size: 20px;
-            width: 18px;
+            @include small-stars;
+        }
+
+        aside & {
+            @include small-stars;
         }
     }
 
@@ -37,7 +45,6 @@
     margin-left: $unit;
 
     @include media-breakpoint-to(xs) {
-        font-size: 14px;
-        line-height: 20px;
+        font: $font-small;
     }
 }
